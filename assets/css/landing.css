@@ -71,18 +71,14 @@ h3 {
 }
 
 
-img {
-	max-width: calc(50vw - 20px);
-	max-height: calc(95vh - 10px);
-}
 
 
 /* Accordion */
-
 .shell-listing {
 	border: 1px solid rgb(162, 164, 202);
 	border-radius: 2em;
 	overflow: hidden;
+	margin-bottom: 3px;
 
 		
 	&.is-open {
@@ -123,9 +119,6 @@ img {
 
 }
 
-.accordion-body {
-
-}
 
 .accordion-icon {
 	cursor: pointer;
@@ -136,4 +129,13 @@ img {
 	width: 25px;
 	margin-right: 5px;
 	border: 0;
+}
+
+.accordion-body {
+	display: flex;
+}
+
+.specimen {
+	max-width: calc(50vw - 20px);
+	max-height: calc(95vh - 10px);
 }
