@@ -21,3 +21,21 @@ function sortBy (type) {
 		scientificButton.classed('active-toggle', false);
 	}
 }
+
+function toggleShell (shellId) {
+	const article = d3.select(`#${shellId}`);
+	article.classed('is-closed')
+		? openShell(article)
+		: closeShell(article);
+
+	function openShell (article) {
+		article.classed('is-closed', false);
+		article.classed('is-open', true);	
+	}
+
+	function closeShell (article) {
+		article.classed('is-closed', true);
+		article.classed('is-open', false);
+	}
+}
+
