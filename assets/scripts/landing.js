@@ -37,12 +37,14 @@ function createAccordion (shell) {
 
 	const body = article.append('section')
 		.attr('class', 'accordion-body collapsed');
-	body.append('img')
-		.attr('class', 'specimen')
-		.attr('src', shell.images[0].link)
-	const info = body.append('section').attr('class', 'specimen-text');
-		info.append('div').text(shell.images[0].notes);
 
+	shell.images.forEach((image) => {
+		body.append('img')
+			.attr('class', 'specimen')
+			.attr('src', image.link)
+		const info = body.append('section').attr('class', 'specimen-text');
+			info.append('div').text(image.notes);
+	});
 }
 
 
