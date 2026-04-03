@@ -146,6 +146,7 @@ h3 {
 }
 
 .specimen-text {
+	padding-left: 5px;
 	flex-shrink: 0;
 	width: 150px;
 	max-width: 500px;
@@ -154,4 +155,8 @@ h3 {
 .label {
 	color: rgb(162, 164, 202);
 	font-weight: bold;
+}
+
+hr {
+	border-color: rgb(81, 81, 104);
 }

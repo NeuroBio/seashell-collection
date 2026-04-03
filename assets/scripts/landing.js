@@ -43,19 +43,30 @@ function createAccordion (shell) {
 			.attr('class', 'specimen')
 			.attr('src', image.link)
 		const info = body.append('section').attr('class', 'specimen-text');
-		if (image.notes) {
-			addTextSection(info, 'Notes', image.notes);
-		}
+		OptionalTextType.forEach((property) => {
+			const text = image[property];
+			if (text) {
+				addTextSection(info, property, text);
+			}
+		});
+
+		const lastHr = d3.selectAll('hr').nodes();
+		d3.select(lastHr[lastHr.length - 1])?.remove();
 	});
 
 	function addTextSection (info, label, text) {
 		const container = info.append('p');
+		const finalLabel = label.split('_')
+			.map((fragment) => fragment.charAt(0).toUpperCase() + fragment.slice(1))
+			.join(' ');
+
 		container.append('span')
 			.attr('class', 'label')
-			.text(`${label}: `);
+			.text(`${finalLabel}: `);
 		container.append('span')
 			.text(text);
 
+		info.append('hr');
 	}
 }
 

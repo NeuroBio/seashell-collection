@@ -5,6 +5,12 @@ const ShellType = Object.freeze({
 	UNIVALVE: 'univalve',
 });
 
+const OptionalTextType = Object.freeze([
+	'standard_size',
+	'record_size',
+	'notes',
+]);
+
 
 const FIRST_LINK = 'atlantic-calico-scallop-argopecten-gibbus.jpg';
 
@@ -12,6 +18,8 @@ class Image {
 	constructor (params) {
 		this.link = params.link;
 		this.notes = params.notes;
+		this.standard_size = params.standardSize;
+		this.record_size = params.recordSize;
 	}
 }
 class Shell {	
@@ -41,10 +49,11 @@ const ShellList = [
 		commonName: 'Ravanel\'s Egg Cockle',
 		scientificName: 'Laevicardium pictum',
 		images: [
-			new Image({
+			{
 				link: '../test-image2.jpg',
 				notes: 'not live yet',
-			}),
+				standardSize: '15-27 mm',
+			},
 		],
 	}),
 	new Shell({
@@ -52,9 +61,9 @@ const ShellList = [
 		commonName: 'Atlantic Calico Scallop',
 		scientificName: 'Argopecten gibbus',
 		images: [
-			new Image({
+			{
 				link: '../test-image.jpg',
-			}),
+			},
 		],
 	}),
 ];
