@@ -20,7 +20,7 @@ ShellList.forEach((shell) => createAccordion(shell));
 
 // Construction Behavior
 function createAccordion (shell) {
-	const listing = shell.type === ShellType.BIVALVE ? bivalveListing : univalveListing;
+	const listing = shell.class === ShellClass.BIVALVE ? bivalveListing : univalveListing;
 
 	const article = listing.append('article')
 		.attr('class', 'shell-listing is-closed')

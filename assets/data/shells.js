@@ -1,6 +1,6 @@
 const R2_BUCKET = 'https://pub-e2c7382fb20d49c89a6f9a6dbf223dfc.r2.dev';
 
-const ShellType = Object.freeze({
+const ShellClass = Object.freeze({
 	BIVALVE: 'bivalve',
 	UNIVALVE: 'univalve',
 });
@@ -24,7 +24,8 @@ class Image {
 }
 class Shell {	
 	constructor (params) {
-		this.type = params.type;
+		this.class = params.class;
+
 		this.commonName = params.commonName;
 		this.scientificName = params.scientificName;
 		this.images = params.images.map((i) => new Image(i));
@@ -45,24 +46,30 @@ class Shell {
 
 const ShellList = [
 	new Shell({
-		type: ShellType.BIVALVE,
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
 		commonName: 'Ravanel\'s Egg Cockle',
 		scientificName: 'Laevicardium pictum',
 		images: [
 			{
 				link: '../test-image2.jpg',
-				notes: 'not live yet',
+				notes: `Container dimensions: 172mm x 89mm. Primarily found on Sanibel and Captiva.`,
 				standardSize: '15-27 mm',
 			},
 		],
 	}),
 	new Shell({
-		type: ShellType.BIVALVE,
+		class: ShellClass.BIVALVE,
+		order: 'Pectinida',
+		family: 'Pectinidae',
 		commonName: 'Atlantic Calico Scallop',
 		scientificName: 'Argopecten gibbus',
 		images: [
 			{
 				link: '../test-image.jpg',
+				notes: ``,
+				standardSize: '2-200mm',
 			},
 		],
 	}),
