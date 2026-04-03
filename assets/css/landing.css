@@ -66,6 +66,10 @@ h3 {
 	user-select: none;
 }
 
+h3 i {
+	user-select: all;
+}
+
 .shell-listing-container {
 	margin-left: 15px;
 }

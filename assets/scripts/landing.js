@@ -38,7 +38,7 @@ function createAccordion (shell) {
 	const body = article.append('section')
 		.attr('class', 'accordion-body');
 
-	shell.images.forEach((image) => {
+	shell.images.forEach((image, i) => {
 		body.append('img')
 			.attr('class', 'specimen')
 			.attr('src', '')
@@ -50,6 +50,15 @@ function createAccordion (shell) {
 				addTextSection(info, property, text);
 			}
 		});
+
+		if (i === 0) {
+			if (shell.standardSize) {
+				addTextSection(info, 'standard_size', shell.standardSize);
+			}
+			if (shell.recordSize) {
+				addTextSection(info, 'record_size', shell.recordSize);
+			}
+		}
 
 		const lastHr = d3.selectAll('hr').nodes();
 		d3.select(lastHr[lastHr.length - 1])?.remove();
