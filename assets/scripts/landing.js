@@ -36,12 +36,13 @@ function createAccordion (shell) {
 		.on('click', toggleShell);
 
 	const body = article.append('section')
-		.attr('class', 'accordion-body collapsed');
+		.attr('class', 'accordion-body');
 
 	shell.images.forEach((image) => {
 		body.append('img')
 			.attr('class', 'specimen')
-			.attr('src', image.link)
+			.attr('src', '')
+			.attr('data-src', image.link); 
 		const info = body.append('section').attr('class', 'specimen-text');
 		OptionalTextType.forEach((property) => {
 			const text = image[property];
@@ -98,8 +99,7 @@ function sortBy (type) {
 	}
 }
 
-function toggleShell (shellId) {
-	// const article = d3.select(`#${shellId}`);
+function toggleShell () {
 	const article = d3.select(this.closest('.shell-listing'));
 	article.classed('is-closed')
 		? openShell(article)
@@ -107,7 +107,11 @@ function toggleShell (shellId) {
 
 	function openShell (article) {
 		article.classed('is-closed', false);
-		article.classed('is-open', true);	
+		article.classed('is-open', true);
+		const specimen = article.select('.specimen');
+		if (specimen.attr('src') === '') {
+            specimen.attr('src', specimen.attr('data-src'));
+        }
 	}
 
 	function closeShell (article) {

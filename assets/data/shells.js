@@ -25,6 +25,8 @@ class Image {
 class Shell {	
 	constructor (params) {
 		this.class = params.class;
+		this.order = params.order;
+		this.family = params.family;
 
 		this.commonName = params.commonName;
 		this.scientificName = params.scientificName;
