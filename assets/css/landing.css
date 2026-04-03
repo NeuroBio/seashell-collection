@@ -133,9 +133,21 @@ h3 {
 
 .accordion-body {
 	display: flex;
+	max-width: calc(100vw - 20px);
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
 
 .specimen {
-	max-width: calc(50vw - 20px);
-	max-height: calc(95vh - 10px);
+	flex: 1 1 0;
+	min-width: 600px;
+	object-fit: cover;
+	max-height: calc(95vh - 20px);
+}
+
+.specimen-text {
+	flex-shrink: 0;
+	width: 150px;
+	max-width: 500px;
+	padding-bottom: 5px;
 }

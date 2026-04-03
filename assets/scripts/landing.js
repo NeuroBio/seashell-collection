@@ -40,7 +40,7 @@ function createAccordion (shell) {
 	body.append('img')
 		.attr('class', 'specimen')
 		.attr('src', shell.images[0].link)
-	const info = body.append('section');
+	const info = body.append('section').attr('class', 'specimen-text');
 		info.append('div').text(shell.images[0].notes);
 
 }
@@ -68,7 +68,7 @@ function sortBy (type) {
 			const entries = d3.select(nodes[i]).selectAll('.shell-listing')
 				.datum((d, i, nodes) => shellsById[nodes[i].id])
 			entries.sort((a, b) => shellsById[a.id].commonName.localeCompare(shellsById[b.id].commonName));
-			entries.select('h3').html((shell) => shell.commonName);
+			entries.select('h3').html((shell) => shell.commonHeader);
 		});
 	}
 }
