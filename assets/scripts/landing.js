@@ -10,6 +10,12 @@ test.attr(`src`, link);
 
 const bivalveListing = d3.select('#bivalves');
 const univalveListing = d3.select('#univalves');
+const shellsById = ShellList.reduce((byId, shell) => {
+	byId[shell.id] = shell;
+	return byId;
+}, {});
+
+ShellList.sort((a, b) => a.commonName.localeCompare(b.commonName));
 ShellList.forEach((shell) => createAccordion(shell));
 
 // Construction Behavior
@@ -48,9 +54,22 @@ function sortBy (type) {
 	if (type === SortType.SCIENTIFIC) {
 		commonButton.classed('active-toggle', false);
 		scientificButton.classed('active-toggle', true);
+		d3.selectAll('.shell-listing-container').each((_, i, nodes) => {
+			const entries = d3.select(nodes[i])
+				.selectAll('.shell-listing')
+				.datum((d, i, nodes) => shellsById[nodes[i].id]);
+			entries.sort((a, b) => shellsById[a.id].scientificName.localeCompare(shellsById[b.id].scientificName));
+			entries.select('h3').html((shell) => shell.scientificHeader);
+		});
 	} else  {
 		commonButton.classed('active-toggle', true);
 		scientificButton.classed('active-toggle', false);
+		d3.selectAll('.shell-listing-container').each((_, i, nodes) => {
+			const entries = d3.select(nodes[i]).selectAll('.shell-listing')
+				.datum((d, i, nodes) => shellsById[nodes[i].id])
+			entries.sort((a, b) => shellsById[a.id].commonName.localeCompare(shellsById[b.id].commonName));
+			entries.select('h3').html((shell) => shell.commonName);
+		});
 	}
 }
 

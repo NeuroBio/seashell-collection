@@ -38,6 +38,17 @@ class Shell {
 const ShellList = [
 	new Shell({
 		type: ShellType.BIVALVE,
+		commonName: 'Ravanel\'s Egg Cockle',
+		scientificName: 'Laevicardium pictum',
+		images: [
+			new Image({
+				link: '../test-image2.jpg',
+				notes: 'not live yet',
+			}),
+		],
+	}),
+	new Shell({
+		type: ShellType.BIVALVE,
 		commonName: 'Atlantic Calico Scallop',
 		scientificName: 'Argopecten gibbus',
 		images: [
