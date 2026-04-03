@@ -18,8 +18,20 @@
 			<section id="sort-by">
 				<span id="sort-by-label">Sort By</span>
 				<div id="toggle-container">
-					<button class="sort-toggle active-toggle" type="button">Common Name</button>
-					<button class="sort-toggle" type="button">Scientific Name</button>
+					<button
+						id="sort-by-common"
+						class="sort-toggle active-toggle"
+						onClick="sortBy('common')"
+						type="button">
+						Common Name
+					</button>
+					<button
+						id="sort-by-scientific"
+						class="sort-toggle"
+						onClick="sortBy('scientific')"
+						type="button">
+						Scientific Name
+					</button>
 				</div>
 			</section>
 		</header>
