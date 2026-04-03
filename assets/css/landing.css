@@ -149,5 +149,9 @@ h3 {
 	flex-shrink: 0;
 	width: 150px;
 	max-width: 500px;
-	padding-bottom: 5px;
+}
+
+.label {
+	color: rgb(162, 164, 202);
+	font-weight: bold;
 }

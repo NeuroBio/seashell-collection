@@ -54,7 +54,6 @@ const ShellList = [
 		images: [
 			new Image({
 				link: '../test-image.jpg',
-				notes: 'not live yet',
 			}),
 		],
 	}),

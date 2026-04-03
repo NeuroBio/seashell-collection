@@ -43,8 +43,20 @@ function createAccordion (shell) {
 			.attr('class', 'specimen')
 			.attr('src', image.link)
 		const info = body.append('section').attr('class', 'specimen-text');
-			info.append('div').text(image.notes);
+		if (image.notes) {
+			addTextSection(info, 'Notes', image.notes);
+		}
 	});
+
+	function addTextSection (info, label, text) {
+		const container = info.append('p');
+		container.append('span')
+			.attr('class', 'label')
+			.text(`${label}: `);
+		container.append('span')
+			.text(text);
+
+	}
 }
 
 
