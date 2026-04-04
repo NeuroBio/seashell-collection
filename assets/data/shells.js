@@ -99,7 +99,7 @@ const ShellList = [
 					It's possible that some or all specimens are Laevicardium angmagsalikense.
 					I cannot figure out how to tell them apart.
 					I have 4 specimens that are near or over 64mm, but be aware: these are likely gerontic specimens.
-					They came up in 2024 a week after hurricane Milton on Hutchinson's Island (Chastain Beach).
+					They came up in 2024 a week after hurricane Milton on Hutchinson Island (Chastain Beach).
 					The smallest white and yellow specimens are from the middle keys.
 					The mid-sized ones are from the Naples and Palm Coast areas.
 				`,
@@ -136,7 +136,7 @@ const ShellList = [
 			{
 				link: 'florida-pickly-cockle-trachycardium-egmontianum-the-big-ones',
 				notes: `
-				These came up in 2024 a week after hurricane Milton on Hutchinson's Island (Chastain Beach).
+				These came up in 2024 a week after hurricane Milton on Hutchinson Island (Chastain Beach).
 				The yellow variant is fresh and sharp.  It's a large but otherwise standard specimen.
 				The rest have very thick spikes.
 				They are likely gerontic specimens.  The largest is 89mm but worn.
@@ -194,7 +194,87 @@ const ShellList = [
 			{
 				link: 'giant-false-donax-iphigenia-brasiliensis',
 				notes: `
-				Essentially all were found on Hutchinson's Island (the northern end of Bathtub Beach).
+				Essentially all were found on Hutchinson Island (the northern end of Bathtub Beach).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Candystick Tellin',
+		scientificName: 'Scissula similis',
+		standardSize: '25-32mm',
+		images: [
+			{
+				link: 'candystick-tellin-scissula-similis',
+				notes: `
+				All were found on Cumberland Island.
+				Due to their size and transparency, they are likely juveniles.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Florida Cross-barred Venus',
+		scientificName: 'Chione elevata',
+		standardSize: '15-33mm',
+		recordSize: '45mm',
+		images: [
+			{
+				link: 'cross-barred-venus-chione-elevata',
+				notes: `
+				Specimens found everywhere, but the bulk of the high quality doubles are from Seahorse Key Shoal (near Cedar Key).
+				Perhaps it was because I had Covid at the time (and wasn't aware it was Covid),
+				but I basically picked up every venus I saw because the insides were so pretty.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Cross-hatch Lucine',
+		scientificName: 'Divaricella quadrisulcata',
+		standardSize: '15-20mm',
+		recordSize: '26mm',
+		images: [
+			{
+				link: 'cross-hatched-lucine-divaricella-quadrisulcata',
+				notes: `
+				Specimens with the most staining were found on Amelia Island.
+				The clean small-to-mid sized specimens found across Florida.
+				The largest specimens were found across several back-to-back days at Lover's Key.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Lady-in-Waiting Venus',
+		scientificName: 'Chionopsis intapurpurea',
+		standardSize: '13-40mm',
+		recorrdSize: '43mm',
+		images: [
+			{
+				link: 'lady-in-waiting-venus-chionopsis-intapurpurea',
+				notes: `
+				Found primarily at Coral Cove Park (3-5),
+				Hutchinson Island (5-7)
+				and Sanibel and Captivea (the majority).
+				The biggest one I have is right on 51mm.
+				It's another one I am guessing is gerontic because it's pure white
+				(other than the standard brown next to the umbo)
+				and the final bands are compressed significantly.
+				It was either found on Captiva or Hutchinson.
+				Given the other gerontic specimens I have, my money is on Hutchinson.
 				`,
 			},
 		],

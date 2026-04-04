@@ -54,7 +54,7 @@ function createAccordion (shell) {
 				addTextSection(info, 'standard_size', shell.standardSize);
 			}
 			if (shell.recordSize) {
-				addTextSection(info, 'record_size', shell.recordSize);
+				addTextSection(info, 'reported_max_size', shell.recordSize);
 			}
 		}
 
