@@ -128,6 +128,12 @@ function toggleShell () {
 			 if (specimen.getAttribute('src') === '') {
 				specimen.setAttribute('src', specimen.getAttribute('data-src'));
 			}
+
+			 if (specimen.complete) {
+				initMagnifier(specimen); // see magnifier.js
+			} else {
+            	specimen.onload = () => initMagnifier(specimen);
+			}
 		});
 	}
 

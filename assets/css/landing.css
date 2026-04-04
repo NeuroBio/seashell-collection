@@ -150,7 +150,8 @@ h3 i {
 .specimen-container {
 	flex: 0 1 auto;
 	max-width: 1330px;
-	width: fit-content; 
+	width: fit-content;
+	position: relative;
 }
 
 .specimen {
@@ -159,6 +160,7 @@ h3 i {
 	min-width: 0;
 	object-fit: contain;
 	max-height: min(calc(95vh - 20px), 1000px);
+	cursor: none;
 }
 
 .specimen-text {
@@ -183,4 +185,18 @@ h3 i {
 hr {
 	color: rgb(81, 81, 104);
 	border: 1px solid rgb(81, 81, 104);
+}
+
+/* experimental */
+.magnifier-glass {
+    position: absolute;
+    border: 1px solid rgb(162, 164, 202);
+    border-radius: 5%;
+    cursor: none;
+    width: 270px;
+    height: 270px;
+    display: none;
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
