@@ -66,7 +66,7 @@ const ShellList = [
 		images: [
 			{
 				link: 'ravanels-egg-cockle-laevicardium-pictum',
-				notes: `Found on Sanibel and Captiva.`,
+				notes: `Found on Sanibel (Blind Pass Beach) and Captiva.`,
 			},
 		],
 	}),
@@ -99,7 +99,7 @@ const ShellList = [
 					It's possible that some or all specimens are Laevicardium angmagsalikense.
 					I cannot figure out how to tell them apart.
 					I have 4 specimens that are near or over 64mm, but be aware: these are likely gerontic specimens.
-					They came up in 2024 a week after hurricane Milton on Hutchinson's Island.
+					They came up in 2024 a week after hurricane Milton on Hutchinson's Island (Chastain Beach).
 					The smallest white and yellow specimens are from the middle keys.
 					The mid-sized ones are from the Naples and Palm Coast areas.
 				`,
@@ -116,7 +116,7 @@ const ShellList = [
 		images: [
 			{
 				link: 'mortons-egg-cockle-laevicardium-mortoni',
-				notes: `Found on Sanibel and Captiva.`,
+				notes: `Found on Sanibel (Blind Pass Beach) and Captiva.`,
 			},
 		],
 	}),
@@ -131,15 +131,15 @@ const ShellList = [
 		images: [
 			{
 				link: 'florida-pickly-cockle-trachycardium-egmontianum',
-				notes: `My standard sized ones.  Found on Fort Myers, Marco Island, Atsena Otie, ect.`,
+				notes: `My standard sized ones.  Found on Fort Myers (Estero Island), Marco Island (Tiger Tail Beach), Atsena Otie, ect.`,
 			},
 			{
 				link: 'florida-pickly-cockle-trachycardium-egmontianum-the-big-ones',
 				notes: `
-				These came up in 2024 a week after hurricane Milton on Hutchinson's Island.
+				These came up in 2024 a week after hurricane Milton on Hutchinson's Island (Chastain Beach).
 				The yellow variant is fresh and sharp.  It's a large but otherwise standard specimen.
 				The rest have very thick spikes.
-				They are likely gerontic specimens.  The largest is 89 mm but worn.
+				They are likely gerontic specimens.  The largest is 89mm but worn.
 				I positioned its most prominent spikes forward for comparison with others
 				in the same position.
 				There are scars where the spikes should have been on the other side.
@@ -149,7 +149,7 @@ const ShellList = [
 			},
 		],
 	}),
-new Shell({
+	new Shell({
 		class: ShellClass.BIVALVE,
 		order: 'Cardiida',
 		family: 'Cardiidae',
@@ -160,7 +160,56 @@ new Shell({
 			{
 				link: 'yellow-prickly-cockle-dallocardia-muricata',
 				notes: `
-				Found on Fort Myers, Lover's Key, Marco Island, Keewaydin, Sanibel, ect.
+				Found on Fort Myers (Estero Island), Lover's Key, Marco Island (Tiger Tail Beach), Keewaydin, Sanibel (Blind Pass Beach), ect.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Semelidae',
+		commonName: 'Common Atlantic Abra',
+		scientificName: 'Abra aequalis',
+		standardSize: '6-7mm',
+		images: [
+			{
+				link: 'common-atlantic-abra-abra-aequalis',
+				notes: `
+				Little white clams are hard, but this is my best guess for these non-transparent,
+				iridescent like pearls minis. All found on Cumberland Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Donacidae',
+		commonName: 'Giant False Donax',
+		scientificName: 'Iphigenia brasiliensis',
+		standardSize: '19-60mm',
+		recordSize: '75mm',
+		images: [
+			{
+				link: 'giant-false-donax-iphigenia-brasiliensis',
+				notes: `
+				Essentially all were found on Hutchinson's Island (the northern end of Bathtub Beach).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: '',
+		family: '',
+		commonName: '',
+		scientificName: '',
+		standardSize: '',
+		images: [
+			{
+				link: '',
+				notes: `
 				`,
 			},
 		],
