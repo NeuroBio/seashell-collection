@@ -66,7 +66,7 @@ const ShellList = [
 		images: [
 			{
 				link: 'ravanels-egg-cockle-laevicardium-pictum',
-				notes: `Container dimensions: 172mm x 89mm. Primarily found on Sanibel and Captiva.`,
+				notes: `Found on Sanibel and Captiva.`,
 			},
 		],
 	}),
@@ -101,7 +101,66 @@ const ShellList = [
 					I have 4 specimens that are near or over 64mm, but be aware: these are likely gerontic specimens.
 					They came up in 2024 a week after hurricane Milton on Hutchinson's Island.
 					The smallest white and yellow specimens are from the middle keys.
-					The mid-sized ones are from the Tampa and Palm Coast areas.
+					The mid-sized ones are from the Naples and Palm Coast areas.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
+		commonName: 'Morton\'s Egg Cockle',
+		scientificName: 'Laevicardium mortoni',
+		standardSize: '10-25mm',
+		images: [
+			{
+				link: 'mortons-egg-cockle-laevicardium-mortoni',
+				notes: `Found on Sanibel and Captiva.`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
+		commonName: 'Florida Prickly Cockle',
+		scientificName: 'Trachycardium egmontianum',
+		standardSize: '25-45mm',
+		recordSize: '67mm',
+		images: [
+			{
+				link: 'florida-pickly-cockle-trachycardium-egmontianum',
+				notes: `My standard sized ones.  Found on Fort Myers, Marco Island, Atsena Otie, ect.`,
+			},
+			{
+				link: 'florida-pickly-cockle-trachycardium-egmontianum-the-big-ones',
+				notes: `
+				These came up in 2024 a week after hurricane Milton on Hutchinson's Island.
+				The yellow variant is fresh and sharp.  It's a large but otherwise standard specimen.
+				The rest have very thick spikes.
+				They are likely gerontic specimens.  The largest is 89 mm but worn.
+				I positioned its most prominent spikes forward for comparison with others
+				in the same position.
+				There are scars where the spikes should have been on the other side.
+				Others are in various positions to show how the thick spikes
+				and wear patterns look on these large specimens.
+				`,
+			},
+		],
+	}),
+new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
+		commonName: 'Yellow Prickly Cockle',
+		scientificName: 'Dallocardia muricata',
+		standardSize: '35-50mm',
+		images: [
+			{
+				link: 'yellow-prickly-cockle-dallocardia-muricata',
+				notes: `
+				Found on Fort Myers, Lover's Key, Marco Island, Keewaydin, Sanibel, ect.
 				`,
 			},
 		],

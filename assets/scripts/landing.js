@@ -39,18 +39,15 @@ function createAccordion (shell) {
 		.attr('class', 'accordion-body');
 
 	shell.images.forEach((image, i) => {
-		body.append('img')
+		const section = body.append('section')
+			.attr('class', 'specimen-entry')
+		const container = section.append('div')
+			.attr('class', 'specimen-container')
+		container.append('img')
 			.attr('class', 'specimen')
 			.attr('src', '')
 			.attr('data-src', image.link); 
-		const info = body.append('section').attr('class', 'specimen-text');
-		OptionalTextType.forEach((property) => {
-			const text = image[property];
-			if (text) {
-				addTextSection(info, property, text);
-			}
-		});
-
+		const info = section.append('section').attr('class', 'specimen-text');
 		if (i === 0) {
 			if (shell.standardSize) {
 				addTextSection(info, 'standard_size', shell.standardSize);
@@ -59,6 +56,14 @@ function createAccordion (shell) {
 				addTextSection(info, 'record_size', shell.recordSize);
 			}
 		}
+
+		OptionalTextType.forEach((property) => {
+			const text = image[property];
+			if (text) {
+				addTextSection(info, property, text);
+			}
+		});
+
 
 		const lastHr = d3.selectAll('hr').nodes();
 		d3.select(lastHr[lastHr.length - 1])?.remove();
@@ -117,10 +122,13 @@ function toggleShell () {
 	function openShell (article) {
 		article.classed('is-closed', false);
 		article.classed('is-open', true);
-		const specimen = article.select('.specimen');
-		if (specimen.attr('src') === '') {
-            specimen.attr('src', specimen.attr('data-src'));
-        }
+		const specimens = article.selectAll('.specimen').nodes();
+
+		specimens.forEach((specimen) => {
+			 if (specimen.getAttribute('src') === '') {
+				specimen.setAttribute('src', specimen.getAttribute('data-src'));
+			}
+		});
 	}
 
 	function closeShell (article) {
