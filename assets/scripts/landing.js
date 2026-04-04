@@ -28,12 +28,13 @@ function createAccordion (shell) {
 
 	const header = article.append('section')
 		.attr('class', 'accordion-header');
-	header.append('h3').html(shell.commonHeader);
 	header.append('button')
 		.attr('class', 'accordion-icon open')
 		.attr('type', 'button')
 		.attr('aria-label', 'toggle shell visibility')
 		.on('click', toggleShell);
+	header.append('h3').html(shell.commonHeader);
+
 
 	const body = article.append('section')
 		.attr('class', 'accordion-body');

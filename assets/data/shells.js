@@ -60,12 +60,12 @@ const ShellList = [
 		class: ShellClass.BIVALVE,
 		order: 'Cardiida',
 		family: 'Cardiidae',
-		commonName: 'Ravanel\'s Egg Cockle',
+		commonName: 'Ravenel\'s Egg Cockle',
 		scientificName: 'Laevicardium pictum',
 		standardSize: '15-27 mm',
 		images: [
 			{
-				link: 'ravanels-egg-cockle-laevicardium-pictum',
+				link: 'ravenels-egg-cockle-laevicardium-pictum',
 				notes: `Found on Sanibel (Blind Pass Beach) and Captiva.`,
 			},
 		],
