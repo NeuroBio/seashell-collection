@@ -416,6 +416,23 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: '',
+		family: '',
+		commonName: 'Chalky Lucine',
+		scientificName: 'Pegophysema schrammi',
+		standardSize: '80-100mm',
+		recordSizee: '110mm',
+		images: [
+			{
+				link: 'chalky-lucine-pegophysema-schrammi',
+				notes: `
+				Found on Keeywadin (x1) and Shell Island/Second Chance Island (x4).
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
