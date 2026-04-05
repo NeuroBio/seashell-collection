@@ -324,6 +324,8 @@ const ShellList = [
 				link: 'little-dove-strawberry-cockle-americardia-collumbella',
 				notes: `
 				Found on Sanibel (Blind Pass Beach) and Captiva.
+				Confirmed as having peaked, triangular ribs
+				(best example in lower right hand corner).
 				`,
 			},
 		],
@@ -340,6 +342,8 @@ const ShellList = [
 				link: 'atlantic-strawberry-cockle-americardia-merdia',
 				notes: `
 				Found on Coral Cove Beach.
+				Confirmed as having flat, square ribs 
+				(best example on the right).
 				`,
 			},
 		],
