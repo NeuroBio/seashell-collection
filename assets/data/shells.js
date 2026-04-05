@@ -177,7 +177,7 @@ const ShellList = [
 				link: 'common-atlantic-abra-abra-aequalis',
 				notes: `
 				Little white clams are hard, but this is my best guess for these non-transparent,
-				iridescent like pearls minis. All found on Cumberland Island.
+				pearly-iridescent minis. All found on Cumberland Island.
 				`,
 			},
 		],
@@ -268,7 +268,7 @@ const ShellList = [
 				notes: `
 				Found primarily at Coral Cove Park (3-5),
 				Hutchinson Island (5-7)
-				and Sanibel and Captivea (the majority).
+				and Sanibel (Blind Pass Beach) and Captiva (the majority).
 				The biggest one I have is right on 51mm.
 				It's another one I am guessing is gerontic because it's pure white
 				(other than the standard brown next to the umbo)
@@ -281,17 +281,149 @@ const ShellList = [
 	}),
 	new Shell({
 		class: ShellClass.BIVALVE,
-		order: '',
-		family: '',
-		commonName: '',
-		scientificName: '',
-		standardSize: '',
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Dosinia-Like Lucine',
+		scientificName: 'Callucina keenae',
+		standardSize: '10-16mm',
+		recordSize: '23mm according to Australia; may not be accurate for Florida',
 		images: [
 			{
-				link: '',
+				link: 'dosinia-like-luscine-callucina-keenae',
 				notes: `
+				Another white clam, but I feel good about the id.  All were found on Cumberland Island.
 				`,
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Pectinida',
+		family: 'Anomiidae',
+		commonName: 'Common Jingle',
+		scientificName: 'Anomia simplex',
+		standardSize: '25-50mm',
+		recordSize: '75mm',
+		images: [
+			{
+				link: 'common-jingle-anomia-simplex',
+				notes: `Found all over Florida.`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
+		commonName: 'Little Dove Strawberry Cockle',
+		scientificName: 'Americardia collumbella',
+		standardSize: '20-40mm',
+		images: [
+			{
+				link: 'little-dove-strawberry-cockle-americardia-collumbella',
+				notes: `
+				Found on Sanibel (Blind Pass Beach) and Captiva.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Cardiidae',
+		commonName: 'Atlantic Strawberry Cockle',
+		scientificName: 'Americardia media',
+		standardSize: '20-35mm',
+		images: [
+			{
+				link: 'atlantic-strawberry-cockle-americardia-merdia',
+				notes: `
+				Found on Coral Cove Beach.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Semelidae',
+		commonName: 'White Atlantic Semele',
+		scientificName: 'Semele proficua',
+		standardSize: '15-38mm',
+		images: [
+			{
+				link: 'white-atlantic-semele-semele-proficua',
+				notes: `
+					Found across florida.  Most heavily harvested from Fort Myers (Estero Island)
+					and Marco Island (Tiger Tail). 
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Semelidae',
+		commonName: 'Purplish Semele',
+		scientificName: 'Semele purpurascens',
+		standardSize: '15-38mm',
+		images: [
+			{
+				link: 'purplish-semele-semele-purpurascens',
+				notes: `
+					A few were found in the Napels area (purple only), but most were picked up on Hutchinson Island (Chastain Beach and Frederick Douglas Memorial Park).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Imperial Venus',
+		scientificName: 'Lirophora latilirata',
+		standardSize: '25-35mm',
+		recordSize: '38mm',
+		images: [
+			{
+				link: 'imperial-venus-lirophora-latilirata',
+				notes: `
+				Sorted from least to most worn, left to right.
+				Specimens found on Hutchinson Island (Chastain Beach and Frederick Douglas Memorial Park).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Lighting Pitar',
+		scientificName: 'Pitar fulminatus',
+		standardSize: '19-48mm',
+		images: [
+			{
+				link: 'lightning-pitar-pitar-fulminatus',
+				notes: `
+				Specimens found on Hutchinson Island (Chastain Beach and Frederick Douglas Memorial Park).
+				None were shiny.  All were worn and came in after Hurricane Milton.
+				`,
+			},
+		],
+	}),
+	// new Shell({
+	// 	class: ShellClass.BIVALVE,
+	// 	order: '',
+	// 	family: '',
+	// 	commonName: '',
+	// 	scientificName: '',
+	// 	standardSize: '',
+	// 	images: [
+	// 		{
+	// 			link: '',
+	// 			notes: `
+	// 			`,
+	// 		},
+	// 	],
+	// }),
 ];
