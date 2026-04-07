@@ -207,8 +207,9 @@ const ShellList = [
 			{
 				link: 'candystick-tellin-scissula-similis',
 				notes: `
-				All were found on Cumberland Island.
+				All the small ones were found on Cumberland Island.
 				Due to their size and transparency, they are likely juveniles.
+				The larger shell was found (I think) on the Gulf Coast.
 				`,
 			},
 		],
@@ -492,6 +493,40 @@ const ShellList = [
 				link: 'mexican-tellin-tellinella-mexicana',
 				notes: `
 				All found on Cumberland island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Buttercup Lucine ',
+		scientificName: 'Anodontia alba',
+		standardSize: '35-53mm',
+		recordSize: '64mm',
+		images: [
+			{
+				link: 'buttercup-lucine-anodontia-alba',
+				notes: `
+				Mostly found on Marco Island (Tiger Tail), Keewaydin, and Fort Myers (Estero Island).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Tiger Lucine',
+		scientificName: 'Codakia orbicularis',
+		standardSize: '60-75mm',
+		recordSize: '98mm',
+		images: [
+			{
+				link: 'tiger-lucine-codakia-orbicularis',
+				notes: `
+				Found in the middle keys.
 				`,
 			},
 		],
