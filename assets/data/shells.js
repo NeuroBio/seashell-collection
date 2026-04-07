@@ -6,10 +6,6 @@ const ShellClass = Object.freeze({
 	UNIVALVE: 'univalve',
 });
 
-const OptionalTextType = Object.freeze([
-	'notes',
-]);
-
 class Image {
 	constructor (params) {
 		this.rawLink = params.link;
@@ -418,8 +414,8 @@ const ShellList = [
 	}),
 	new Shell({
 		class: ShellClass.BIVALVE,
-		order: '',
-		family: '',
+		order: 'Lucinida',
+		family: 'Lucinidae',
 		commonName: 'Chalky Lucine',
 		scientificName: 'Pegophysema schrammi',
 		standardSize: '80-100mm',
@@ -429,6 +425,73 @@ const ShellList = [
 				link: 'chalky-lucine-pegophysema-schrammi',
 				notes: `
 				Found on Keeywadin (x1) and Shell Island/Second Chance Island (x4).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Naticidae',
+		commonName: 'Brown Baby Ear',
+		scientificName: 'Sinum maculatum',
+		standardSize: '20-35',
+		recordSize: '40mm',
+		images: [
+			{
+				link: 'brown-babys-ear-sinum-maculatum',
+				notes: `
+				Found on Sanibel (Blind pass Beach).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Naticidae',
+		commonName: 'White Baby Ear',
+		scientificName: 'Sinum perspectivum',
+		standardSize: '22-51mm',
+		images: [
+			{
+				link: 'white-baby-ear-sinum-perspectivum',
+				notes: `
+				Found primarily on the east coast of Florida.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Speckled Tellin',
+		scientificName: 'Tellinella listeri',
+		standardSize: '50-75mm',
+		recordSize: '100mm',
+		images: [
+			{
+				link: 'speckled-tellin-tellinella-listeri',
+				notes: `
+				Found in the middle keys.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Mexican Tellin',
+		scientificName: 'Tellinella mexicana',
+		standardSize: '20-60mm',
+		recordSize: '60mm',
+		images: [
+			{
+				link: 'mexican-tellin-tellinella-mexicana',
+				notes: `
+				All found on Cumberland island.
 				`,
 			},
 		],

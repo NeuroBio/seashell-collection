@@ -51,20 +51,17 @@ function createAccordion (shell) {
 		const info = section.append('section').attr('class', 'specimen-text');
 		if (i === 0) {
 			if (shell.standardSize) {
-				addTextSection(info, 'standard_size', shell.standardSize);
+				addTextSection(info, 'Standard Size', shell.standardSize);
 			}
 			if (shell.recordSize) {
-				addTextSection(info, 'reported_max_size', shell.recordSize);
+				addTextSection(info, 'Reported Max Size', shell.recordSize);
 			}
 		}
 
-		OptionalTextType.forEach((property) => {
-			const text = image[property];
-			if (text) {
-				addTextSection(info, property, text);
-			}
-		});
-
+		const text = image.notes;
+		if (text) {
+			addTextSection(info, 'Specimen Notes', text);
+		}
 
 		const lastHr = d3.selectAll('hr').nodes();
 		d3.select(lastHr[lastHr.length - 1])?.remove();
