@@ -657,7 +657,56 @@ const ShellList = [
 			},
 		],
 	}),
-
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Disk Dosinia',
+		scientificName: 'Dosinia discus',
+		standardSize: '42-76mm',
+		images: [
+			{
+				link: 'disk-dosinia-dosinia-discus',
+				notes: `
+				Best specimens found at Huguenot Memorial Park.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Mactridae',
+		commonName: 'Fragile Surf Clam',
+		scientificName: 'Mactrotoma fragilis',
+		standardSize: '45-49mm',
+		recordSize: '90mm',
+		images: [
+			{
+				link: 'fragile-surf-clam-mactrotoma-fragilis',
+				notes: `
+				Found on Hutchinson Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Calico Clam',
+		scientificName: 'Megapitaria maculata',
+		standardSize: '40-75mm',
+		recordSize: '80mm',
+		images: [
+			{
+				link: 'calico-clam-megapitaria-maculata',
+				notes: `
+				Largely found on Marco Island (Tiger Tail) and Fort Myers (Estero Island).
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
