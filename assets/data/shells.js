@@ -531,6 +531,133 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Thick Lucine',
+		scientificName: 'Phacoides pectinatus',
+		standardSize: '50-60mm',
+		recordSize: '66mm',
+		images: [
+			{
+				link: 'thick-lucine-phacoides-pectinatus',
+				notes: `
+				Found on Keewaydin.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Pennsylvania Lucine',
+		scientificName: 'Lucina pensylvanica',
+		standardSize: '38-52mm',
+		images: [
+			{
+				link: 'pennsylvania-lucine-lucina-pensylvanica',
+				notes: `
+				I don't remember where I found these,
+				but I have a hunch that I found them in the shell waste piles
+				left for us during the beach replenishment in West Palm Beach 2021.
+				I think it was at Phipps Ocean Park.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Rose Petal Tellin',
+		scientificName: 'Eurytellina lineata',
+		standardSize: '25-32mm',
+		recordSize: '38mm',
+		images: [
+			{
+				link: 'rose-petal-tellin-eurytellina-lineata',
+				notes: `
+				Largely found on Marco Island (Tiger Tail)
+				and Fort Myers (Estero Island).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Alternate Tellin',
+		scientificName: 'Eurytellina alternata',
+		standardSize: '40-58mm',
+		recordSize: '76mm',
+		images: [
+			{
+				link: 'alternate-tellin-eurytellina-alternata',
+				notes: `
+				Many found on Cumberland Island, others on Fort Myers (Estero Island).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Psammobiidae',
+		commonName: 'Gaudy Asaphis',
+		scientificName: 'Asaphis deflorata',
+		standardSize: '30-70mm',
+		recordSize: '78mm',
+		images: [
+			{
+				link: 'gaudy-asaphis-asaphis-deflorata',
+				notes: `
+				All found in the rocks under the mangroves at Phil Foster Park.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Mactridae',
+		commonName: 'Southern Surf Clam',
+		scientificName: 'Spisula solidissima similis',
+		standardSize: '50-100',
+		recordSize: '122mm',
+		images: [
+			{
+				link: 'southern-surf-clam-spisula-solidissima-similis',
+				notes: `
+				Found on disparate beaches.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Sunrise Tellin',
+		scientificName: 'Tellina radiata',
+		standardSize: '60-85mm',
+		recordSize: '105mm',
+		images: [
+			{
+				link: 'sunrise-tellin-tellina-radiata',
+				notes: `
+				This shell chose me.
+				It rolled up at my feet on a wav while walking back from a long walk in the middle keys.
+				I had to chase it to get it into my hot little hands.
+				My dad, who was several steps ahead, informed me that the sea gods meant for him to have it.
+				I was a terrible child and did not give it to him.
+				`,
+			},
+		],
+	}),
+
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
