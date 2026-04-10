@@ -19,7 +19,6 @@ class Image {
 		const prefix = isLocal
 			? '../local-images'
 			: `${R2_BUCKET}/${this.class}`;
-			console.log(`${prefix}/${this.rawLink}.jpg`)
 		return `${prefix}/${this.rawLink}.jpg`;
 	}
 }

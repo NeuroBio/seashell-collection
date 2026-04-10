@@ -61,12 +61,17 @@ h2 {
 }
 
 h3 {
+	margin-left: -5px;
+	font-style: italic;
+}
+
+h4 {
 	font-size: 13pt;
 	margin: 0;
 	user-select: none;
 }
 
-h3 i {
+h4 i {
 	user-select: all;
 }
 

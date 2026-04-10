@@ -15,8 +15,9 @@ const shellsById = ShellList.reduce((byId, shell) => {
 	return byId;
 }, {});
 
-ShellList.sort((a, b) => a.commonName.localeCompare(b.commonName));
+// ShellList.sort((a, b) => a.commonName.localeCompare(b.commonName));
 ShellList.forEach((shell) => createAccordion(shell));
+sortBy(SortType.COMMON);
 
 // Construction Behavior
 function createAccordion (shell) {
@@ -33,7 +34,7 @@ function createAccordion (shell) {
 		.attr('type', 'button')
 		.attr('aria-label', 'toggle shell visibility')
 		.on('click', toggleShell);
-	header.append('h3').html(shell.commonHeader);
+	header.append('h4').html(shell.commonHeader);
 
 
 	const body = article.append('section')
@@ -86,30 +87,58 @@ function createAccordion (shell) {
 
 //  Live Behavior
 function sortBy (type) {
+	const isScientific = type === SortType.SCIENTIFIC;
 	const commonButton = d3.select('#sort-by-common');
 	const scientificButton = d3.select('#sort-by-scientific');
 
-	if (type === SortType.SCIENTIFIC) {
+	if (isScientific) {
 		commonButton.classed('active-toggle', false);
 		scientificButton.classed('active-toggle', true);
-		d3.selectAll('.shell-listing-container').each((_, i, nodes) => {
-			const entries = d3.select(nodes[i])
-				.selectAll('.shell-listing')
-				.datum((d, i, nodes) => shellsById[nodes[i].id]);
-			entries.sort((a, b) => shellsById[a.id].scientificName.localeCompare(shellsById[b.id].scientificName));
-			entries.select('h3').html((shell) => shell.scientificHeader);
-		});
 	} else  {
 		commonButton.classed('active-toggle', true);
 		scientificButton.classed('active-toggle', false);
-		d3.selectAll('.shell-listing-container').each((_, i, nodes) => {
-			const entries = d3.select(nodes[i]).selectAll('.shell-listing')
-				.datum((d, i, nodes) => shellsById[nodes[i].id])
-			entries.sort((a, b) => shellsById[a.id].commonName.localeCompare(shellsById[b.id].commonName));
-			entries.select('h3').html((shell) => shell.commonHeader);
+	}
+
+	d3.selectAll('.shell-listing-container').each((_, i, nodes) => {
+		const entries = d3.select(nodes[i])
+			.selectAll('.shell-listing')
+			.datum((d, i, nodes) => shellsById[nodes[i].id]);
+		entries.sort((a, b) => shellSorter(a, b, isScientific));
+		entries.select('h4').html((shell) => isScientific ? shell.scientificHeader : shell.commonHeader);
+	});
+	applyOrderHeaders();
+
+
+	function shellSorter (a, b, isScientific) {
+		return a.order.localeCompare(b.order) || 
+			a.family.localeCompare(b.family) || 
+			(isScientific ? a.scientificName.localeCompare(b.scientificName) : a.commonName.localeCompare(b.commonName));
+	};
+	
+	function applyOrderHeaders () {
+		d3.selectAll('.order-divider').remove();
+
+		d3.selectAll('.shell-listing-container').each((_, i, listNodes) => {
+			const container = d3.select(listNodes[i]);
+			const entries = container.selectAll('.shell-listing');
+			
+			let lastOrder;
+			entries.each((shell, j, nodes) => {
+				if (shell.order !== lastOrder) {
+					const currentNode = nodes[j];
+					
+					d3.select(currentNode.parentNode)
+						.insert('h3', () => currentNode)
+						.attr('class', 'order-divider')
+						.text(shell.order);
+
+					lastOrder = shell.order;
+				}
+			});
 		});
 	}
 }
+
 
 function toggleShell () {
 	const article = d3.select(this.closest('.shell-listing'));
