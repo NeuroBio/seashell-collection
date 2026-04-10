@@ -1,5 +1,5 @@
 const R2_BUCKET = 'https://pub-e2c7382fb20d49c89a6f9a6dbf223dfc.r2.dev';
-const isLocal = false;
+const isLocal = window.location.protocol === 'file:';
 
 const ShellClass = Object.freeze({
 	BIVALVE: 'bivalve',
@@ -19,6 +19,7 @@ class Image {
 		const prefix = isLocal
 			? '../local-images'
 			: `${R2_BUCKET}/${this.class}`;
+		console.log(prefix)
 		return `${prefix}/${this.rawLink}.jpg`;
 	}
 }
