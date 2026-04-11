@@ -558,10 +558,7 @@ const ShellList = [
 			{
 				link: 'pennsylvania-lucine-lucina-pensylvanica',
 				notes: `
-				I don't remember where I found these,
-				but I have a hunch that I found them in the shell waste piles
-				left for us during the beach replenishment in West Palm Beach 2021.
-				I think it was at Phipps Ocean Park.
+				I don't remember where I found these.
 				`,
 			},
 		],
@@ -807,6 +804,7 @@ const ShellList = [
 				I just remember it was when I was giving
 				my mom all the paper cockles I found and I
 				kept this one because it looked different.
+				It may have been in the middle keys.
 				`,
 			},
 		],
@@ -828,6 +826,156 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Lace Murex',
+		scientificName: 'Chicoreus florifer',
+		standardSize: '35-70mm',
+		recordSize: '81mm (Florida), 93mm (Carribean)',
+		images: [
+			{
+				link: 'lace-murex-chicoreus-florifer',
+				notes: `
+				The majority of these were found on Fort Myers (Estero Island),
+				Marco Island (Tiger Tail), and Kice Island.
+				The largest specimen is 76mm.
+				The smallest is 16mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Apple Murex',
+		scientificName: 'Phyllonotus pomum',
+		standardSize: '50-84mm',
+		recordSize: '133mm',
+		images: [
+			{
+				link: 'apple-murex-phyllonotus-pomum',
+				notes: `
+				The majority of these were found on Fort Myers (Estero Island),
+				Marco Island (Tiger Tail), and Kice Island.
+				The largest specimen is 64mm.
+				The smallest is 16mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Rose Murex',
+		scientificName: 'Vokesimurex rubidus',
+		standardSize: '25-45mm',
+		recordSize: '50mm (Florida), 68mm (Overall)',
+		images: [
+			{
+				link: 'rose-murex-vokesimurex-rubidus',
+				notes: `
+				The four best speciments (largest one and 3 most colorful) were found on Marco Island (Tiger Tail)
+				The other two were found on Kice Island.
+				The largest is 38mm
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Hay\'s Rocksnail',
+		scientificName: 'Stramonita canaliculata',
+		standardSize: '35mm-75mm',
+		recordSize: '112mm',
+		images: [
+			{
+				link: 'hays-rocksnail-stramonita-canaliculata',
+				notes: `
+				I do not remember where I found these.
+				Likely at least some are from the rock jetty at Amelia Island (Fort Clinch).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Florida Rocksnail',
+		scientificName: 'Stramonita floridana',
+		standardSize: '50-80mm',
+		recordSize: '132mm',
+		images: [
+			{
+				link: 'florida-rocksnail-stramonita-floridana',
+				notes: `
+				Largest specimens found at the rock jetty at Amelia Island (Fort Clinch).
+				Largest specimen is 63mm.
+				Smaller specimens from Hutchinson Island (Chastain Beach).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Rustic Rocksnaill',
+		scientificName: 'Stramonita rustica',
+		standardSize: '25-34mm',
+		recordSize: '55mm',
+		images: [
+			{
+				link: 'rustic-rocksnail-stramonita-rustica',
+				notes: `
+				Found on West Palm Beach (Phipps Ocean Park).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Pisaniidae',
+		commonName: 'Tinted Catharus',
+		scientificName: 'Gemophos tinctus',
+		standardSize: '25-28mm',
+		recordSize: '38mm',
+		images: [
+			{
+				link: 'tinted-cantharus-gemophos-tinctus',
+				notes: `
+				Found all  over the place.
+				Largest is 32mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Deltoid Rock Shell',
+		scientificName: 'Vasula deltoidea',
+		standardSize: '30-40mm',
+		recordSize: '52mm',
+		images: [
+			{
+				link: 'deltoid-rock-shell-vasula-deltoidea',
+				notes: `
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				Largest specimen is 35mm.
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
@@ -843,4 +991,8 @@ const ShellList = [
 	// 		},
 	// 	],
 	// }),
+
+	// but I have a hunch that I found them in the shell waste piles
+	// left for us during the beach replenishment in West Palm Beach 2021 (Phipps Ocean Park).
+
 ];
