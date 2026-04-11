@@ -139,34 +139,38 @@ function sortBy (type) {
 	}
 }
 
-
 function toggleShell () {
 	const article = d3.select(this.closest('.shell-listing'));
 	article.classed('is-closed')
 		? openShell(article)
 		: closeShell(article);
+}
 
-	function openShell (article) {
-		article.classed('is-closed', false);
-		article.classed('is-open', true);
-		const specimens = article.selectAll('.specimen').nodes();
+function openAll () {
+	d3.selectAll('.shell-listing').each((d, i, nodes) =>
+		openShell(d3.select( nodes[i])));
+}
 
-		specimens.forEach((specimen) => {
-			 if (specimen.getAttribute('src') === '') {
-				specimen.setAttribute('src', specimen.getAttribute('data-src'));
-			}
+function openShell (article) {
+	article.classed('is-closed', false);
+	article.classed('is-open', true);
+	const specimens = article.selectAll('.specimen').nodes();
 
-			 if (specimen.complete) {
-				initMagnifier(specimen); // see magnifier.js
-			} else {
-            	specimen.onload = () => initMagnifier(specimen);
-			}
-		});
-	}
+	specimens.forEach((specimen) => {
+			if (specimen.getAttribute('src') === '') {
+			specimen.setAttribute('src', specimen.getAttribute('data-src'));
+		}
 
-	function closeShell (article) {
-		article.classed('is-closed', true);
-		article.classed('is-open', false);
-	}
+			if (specimen.complete) {
+			initMagnifier(specimen); // see magnifier.js
+		} else {
+			specimen.onload = () => initMagnifier(specimen);
+		}
+	});
+}
+
+function closeShell (article) {
+	article.classed('is-closed', true);
+	article.classed('is-open', false);
 }
 
