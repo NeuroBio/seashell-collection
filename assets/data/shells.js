@@ -706,6 +706,128 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Chamidae',
+		commonName: 'Cherry Jewel Box',
+		scientificName: 'Chama sarda',
+		standardSize: '23-25mm',
+		recordSize: '38mm',
+		images: [
+			{
+				link: 'cherry-jewel-box-chama-sarda',
+				notes: `
+				Found in the middle keys.  Likely a bottom valve.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Carditida',
+		family: 'Crassatellidae',
+		commonName: 'Beautiful Crassatella',
+		scientificName: 'Kalolophus speciosus',
+		standardSize: '25-50mm',
+		recordSize: '63mm',
+		images: [
+			{
+				link: 'beautiful-crassatella-kalolophus-speciosus',
+				notes: `
+				Found on Sanibel (Blind Pass Beach).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Mactridae',
+		commonName: 'Dwarf Surf Clam',
+		scientificName: 'Mulinia lateralis',
+		standardSize: '10-20mm',
+		images: [
+			{
+				link: 'dwarf-surf-clam-mulinia-lateralis',
+				notes: `
+				Found on Cumberland island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Limida',
+		family: 'Limidae',
+		commonName: 'Spiny Fileclam',
+		scientificName: 'Lima caribaea',
+		standardSize: '20-30mm',
+		recordSize: '40mm',
+		images: [
+			{
+				link: 'spiny-fileclam-lima-caribaea',
+				notes: `
+				Found at different times in different places in Florida.
+				Pink discoloration on the largest specimen is sponge.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Elongated Macoma',
+		scientificName: 'Macoploma tenta',
+		standardSize: '18-20mm',
+		recordSize: '25mm',
+		images: [
+			{
+				link: 'elongated-macoma-macoploma-tenta',
+				notes: `
+				Found on Cumberland Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Semelidae',
+		commonName: 'Cancellate Semele',
+		scientificName: 'Semele bellastriata',
+		standardSize: '12-20mm',
+		recordSize: '24mm',
+		images: [
+			{
+				link: 'cancellate-semele- semele-bellastriata',
+				notes: `
+				I do not remember where I found this one.
+				I just remember it was when I was giving
+				my mom all the paper cockles I found and I
+				kept this one because it looked different.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Venerida',
+		family: 'Veneridae',
+		commonName: 'Pointed Venus',
+		scientificName: 'Anomalocardia cuneimeris',
+		standardSize: '12-18mm',
+		recordSize: '24mm',
+		images: [
+			{
+				link: 'pointed-venus-anomalocardia-cuneimeris',
+				notes: `
+				Found on Peanut Island.
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
