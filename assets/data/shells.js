@@ -976,6 +976,88 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Deltoid Rock Shell',
+		scientificName: 'Vasula deltoidea',
+		standardSize: '30-40mm',
+		recordSize: '52mm',
+		images: [
+			{
+				link: 'deltoid-rock-shell-vasula-deltoidea',
+				notes: `
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				Largest specimen is 35mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Muricidae',
+		commonName: 'Deltoid Rock Shell',
+		scientificName: 'Vasula deltoidea',
+		standardSize: '30-40mm',
+		recordSize: '52mm',
+		images: [
+			{
+				link: 'deltoid-rock-shell-vasula-deltoidea',
+				notes: `
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				Largest specimen is 35mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Fasciolariidae',
+		commonName: 'Chestnut Latirus',
+		scientificName: 'Leucozonia nassa',
+		standardSize: '30-40mm',
+		recordSize: '68mm',
+		images: [
+			{
+				link: 'chestnut latirus-leucozonia-nassa',
+				notes: `
+				The orangey ones were found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				The dark ones came from the middle keys and Hutchinson Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Melongenidae',
+		commonName: 'Crown Conch',
+		scientificName: 'Melongena corona',
+		standardSize: '50-100mm',
+		recordSize: '205mm',
+		images: [
+			{
+				link: 'crown-conch-melongena-corona',
+				notes: `
+				Found all over the place.
+				`,
+			},
+			{
+				link: 'crown-conch-melongena-corona-giants',
+				notes: `
+				These were bycatch of the crab industry in Cedar Key.
+				Pulled from the mud around where the crab traps are emptied.
+				Largest specimen is 127mm.
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
