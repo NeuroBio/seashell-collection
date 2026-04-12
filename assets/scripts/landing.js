@@ -4,7 +4,6 @@ const SortType = Object.freeze({
 });
 
 const test = d3.select('#test');
-// const link = `${R2_BUCKET}/${Bucket.BIVALVE}/${FIRST_LINK}`
 const link = '../test-image.jpg'
 test.attr(`src`, link);
 
@@ -15,7 +14,6 @@ const shellsById = ShellList.reduce((byId, shell) => {
 	return byId;
 }, {});
 
-// ShellList.sort((a, b) => a.commonName.localeCompare(b.commonName));
 ShellList.forEach((shell) => createAccordion(shell));
 sortBy(SortType.COMMON);
 
@@ -56,6 +54,9 @@ function createAccordion (shell) {
 			}
 			if (shell.recordSize) {
 				addTextSection(info, 'Reported Max Size', shell.recordSize);
+			}
+			if(shell.idNotes) {
+				addTextSection(info, 'Identification Notes', shell.idNotes);
 			}
 		}
 

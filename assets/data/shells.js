@@ -29,6 +29,7 @@ class Shell {
 		this.family = params.family;
 		this.standardSize = params.standardSize;
 		this.recordSize = params.recordSize;
+		this.idNotes = params.idNotes;
 
 		this.commonName = params.commonName;
 		this.scientificName = params.scientificName;
@@ -237,16 +238,71 @@ const ShellList = [
 		order: 'Lucinida',
 		family: 'Lucinidae',
 		commonName: 'Cross-hatch Lucine',
-		scientificName: 'Divaricella quadrisulcata',
+		scientificName: 'Divalinga quadrisulcata',
+		idNotes: `
+		Quadrisulcata has smooth edges (unlike Divaricella dentata)
+		and the thickest, least-crowded bands in their crosshatch.
+		The V is often wider than those on strigilla,
+		because the left and right sides of the bands do not meet perfectly.
+		It is more robust than strigella and its valves are deeper.
+		`,
 		standardSize: '15-20mm',
-		recordSize: '26mm',
+		recordSize: '29mm',
 		images: [
 			{
-				link: 'cross-hatched-lucine-divaricella-quadrisulcata',
+				link: 'cross-hatched-lucine-divalinga-quadrisulcata',
 				notes: `
-				Specimens with the most staining were found on Amelia Island.
+				Specimens with yellow staining were found on Amelia Island.
 				The clean small-to-mid sized specimens found across Florida.
 				The largest specimens were found across several back-to-back days at Lover's Key.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Dentate Lucine',
+		scientificName: 'Divaricella dentata',
+		standardSize: '25-37mm',
+		recordSize: '38mm',
+		idNotes: `
+		Perhaps the easiest to identify among the cross-hatch lucine lookalikes,
+		dentata has visibly serated edges and grows larger than Divalinga strigilla and Divalinga quadrisulcata.
+		It is the most robust shell of the three and its valves are not as deep as quadrisulcata.
+		It's banding is thinner like strigilla's.
+		`,
+		images: [
+			{
+				link: 'dentate-lucine-divaricella-dentata',
+				notes: `
+				I believe both were found on Amerlia Island, but I do not remember.
+				`,
+			},
+		],
+	}),
+		new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Lucinida',
+		family: 'Lucinidae',
+		commonName: 'Northern Cross-hatch Lucine',
+		scientificName: 'Divalinga strigilla',
+		standardSize: '12-22mm',
+		recordSize: '24mm',
+		idNotes: `
+		Strigilla has smooth edges (unlike Divaricella dentata),
+		but the bands in their crosshatch are thinner and thus more crowded than those in quadrisulcata.
+		The V is often tighter than those on quadrisulcata,
+		because the left and right sides of the bands meet perfectly.
+		Its shell is the thinnest of the three.
+		True to its name this is a northern species, so you are unliickly to find it on Florida below Amelia Island.
+		`,
+		images: [
+			{
+				link: 'northern-cross-hatched-lucine-divalinga-strigilla',
+				notes: `
+				Found on Amelia Island.
 				`,
 			},
 		],
@@ -313,6 +369,10 @@ const ShellList = [
 		order: 'Cardiida',
 		family: 'Cardiidae',
 		commonName: 'Little Dove Strawberry Cockle',
+		idNotes: `
+			The columbella species features triangular, peaked ribs that create a sharp zig-zag profile.
+			This differs from the media species, which has square, flat-topped ribs.
+		`,
 		scientificName: 'Americardia collumbella',
 		standardSize: '20-40mm',
 		images: [
@@ -331,6 +391,10 @@ const ShellList = [
 		order: 'Cardiida',
 		family: 'Cardiidae',
 		commonName: 'Atlantic Strawberry Cockle',
+		idNotes: `
+			The media species features rectangular, plateaued ribs that create a traditional crenulated profile (like gear teeth).
+			This differs from the columbella species, which has triangular, peaked ribs.
+		`,
 		scientificName: 'Americardia media',
 		standardSize: '20-35mm',
 		images: [
@@ -468,6 +532,14 @@ const ShellList = [
 		family: 'Tellinidae',
 		commonName: 'Speckled Tellin',
 		scientificName: 'Tellinella listeri',
+		idNotes: `
+		Though similar in sculpting to mexicana,
+		listeri grows larger and it is not as elongated (i.e. these shells are wider).
+		Both can sport speckles and zigzags, but listeri will have brilliant yellow interiors that stand out from
+		the pale yellow some mexicana have.
+		The ridge on the protruding tail (posterior) of the shell is not as well defined on listeri.
+		Its scaling is muted and it is not as raised.
+		`,
 		standardSize: '50-75mm',
 		recordSize: '100mm',
 		images: [
@@ -485,6 +557,13 @@ const ShellList = [
 		family: 'Tellinidae',
 		commonName: 'Mexican Tellin',
 		scientificName: 'Tellinella mexicana',
+		idNotes: `
+		Though similar in sculpting to listeri,
+		mexicana is longer than it is wide and does not grow as large.
+		Both can sport speckles and zigzags, but mexicana will not have the bright yellow interiors of listeri;
+		mexicana can have pale yellow interiors however.
+		The scaling on the raised ridge on the protruding tail (posterior) of the shell is more developed on mexicana.
+		`,
 		standardSize: '20-60mm',
 		recordSize: '60mm',
 		images: [
@@ -659,6 +738,7 @@ const ShellList = [
 		family: 'Veneridae',
 		commonName: 'Disk Dosinia',
 		scientificName: 'Dosinia discus',
+		idNotes: `Discus has more bands that are thinner than Concentrica.  However, I don't believe I have examples of both to highlight the difference.`,
 		standardSize: '42-76mm',
 		images: [
 			{
@@ -711,6 +791,11 @@ const ShellList = [
 		scientificName: 'Chama sarda',
 		standardSize: '23-25mm',
 		recordSize: '38mm',
+		idNotes: `
+		Could be confsed with the far more common Chama congregata.
+		However, sarda's brilliant, shiny red interior is an obvious difference.
+		Sarda grows larger and is a deeper shell, especially when you compare the bottom valves.
+		`,
 		images: [
 			{
 				link: 'cherry-jewel-box-chama-sarda',
@@ -891,6 +976,17 @@ const ShellList = [
 		family: 'Muricidae',
 		commonName: 'Hay\'s Rocksnail',
 		scientificName: 'Stramonita canaliculata',
+		idNotes: `
+		Canaliculata will not have the bright red/orange interiors seen on haemastoma,
+		though it can have peach-colored interiors.
+		It will have prominent double ridges following the shell's spiral and shoulder,
+		which is in contrast to floridana which will have no or weak ridges and only one set.
+		Those ridges also affect the shape of the aperture; canaliculata will have a more 7-shaped aperture,
+		where the angle is caused by the aperture molding through those ridges.
+		It also lacks the rounded shoulder of floridana, making its profile similar to a fighting conch.
+		It is longer and gets larger than rustica.
+		Rustica's ridges are relatively larger and thus there are fewer of them.
+		`,
 		standardSize: '35mm-75mm',
 		recordSize: '112mm',
 		images: [
@@ -909,6 +1005,14 @@ const ShellList = [
 		family: 'Muricidae',
 		commonName: 'Florida Rocksnail',
 		scientificName: 'Stramonita floridana',
+		idNotes: `
+		Floridana will not have the bright red/orange interiors seen on haemastoma,
+		though it can have peach-colored interiors.
+		It will have no or weak ridges and only one set,
+		which is in constrast to the prominant double ridging on canaliculata and rustica.
+		Floridana will have a more C-shaped apperture due to its lack of ridging and its contour will be prominently rounded.
+		It is longer and gets larger than rustica.
+		`,
 		standardSize: '50-80mm',
 		recordSize: '132mm',
 		images: [
@@ -918,6 +1022,9 @@ const ShellList = [
 				Largest specimens found at the rock jetty at Amelia Island (Fort Clinch).
 				Largest specimen is 63mm.
 				Smaller specimens from Hutchinson Island (Chastain Beach).
+				One of the larger specimens on first glance appears to have the 7-shaped apperture of canaliculata.
+				However, closer inspection proves that the lip is broken.
+				I identified it based on the rounded shoulder and lack of prominent ridges.
 				`,
 			},
 		],
@@ -928,6 +1035,14 @@ const ShellList = [
 		family: 'Muricidae',
 		commonName: 'Rustic Rocksnaill',
 		scientificName: 'Stramonita rustica',
+		idNotes: `
+		Rustica will not have the bright red/orange interiors seen on haemastoma,
+		or the peach-colored interiors of canaliculata or floridana.
+		Its interiors should be white or clear.
+		Rustica does not grow as large as the other species and its ridges are relatively larger than canaliculata's.
+		Thus, there are fewer ridges.
+		The shell is squat, with a profile similar to a Deltoid Rock Shell with spines.
+		`,
 		standardSize: '25-34mm',
 		recordSize: '55mm',
 		images: [
@@ -945,6 +1060,12 @@ const ShellList = [
 		family: 'Pisaniidae',
 		commonName: 'Tinted Catharus',
 		scientificName: 'Gemophos tinctus',
+		idNotes: `
+		The thick lip is the most obvious identifying trait.
+		However, juvenile specimens may not have developed it yet and are more prone to lip breakage.
+		The bexk way to tell juveniles from rocksnails is the beaded ridges that will alway be found on
+		this species and never on rocksnails.
+		`,
 		standardSize: '25-28mm',
 		recordSize: '38mm',
 		images: [
@@ -953,6 +1074,7 @@ const ShellList = [
 				notes: `
 				Found all  over the place.
 				Largest is 32mm.
+				I have a mix of adults and juveniles turned to show their lips as examples.
 				`,
 			},
 		],
@@ -1020,6 +1142,36 @@ const ShellList = [
 			},
 		],
 	}),
+	// new Shell({
+	// 	class: ShellClass.UNIVALVE,
+	// 	order: '',
+	// 	family: '',
+	// 	commonName: '',
+	// 	scientificName: '',
+	// 	standardSize: '',
+	// 	images: [
+	// 		{
+	// 			link: '',
+	// 			notes: `
+	// 			`,
+	// 		},
+	// 	],
+	// }),
+	// new Shell({
+	// 	class: ShellClass.UNIVALVE,
+	// 	order: '',
+	// 	family: '',
+	// 	commonName: '',
+	// 	scientificName: '',
+	// 	standardSize: '',
+	// 	images: [
+	// 		{
+	// 			link: '',
+	// 			notes: `
+	// 			`,
+	// 		},
+	// 	],
+	// }),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
