@@ -979,44 +979,6 @@ const ShellList = [
 	new Shell({
 		class: ShellClass.UNIVALVE,
 		order: 'Neogastropoda',
-		family: 'Muricidae',
-		commonName: 'Deltoid Rock Shell',
-		scientificName: 'Vasula deltoidea',
-		standardSize: '30-40mm',
-		recordSize: '52mm',
-		images: [
-			{
-				link: 'deltoid-rock-shell-vasula-deltoidea',
-				notes: `
-				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
-				Largest specimen is 35mm.
-				`,
-			},
-		],
-	}),
-	new Shell({
-		class: ShellClass.UNIVALVE,
-		order: 'Neogastropoda',
-		family: 'Muricidae',
-		commonName: 'Deltoid Rock Shell',
-		scientificName: 'Vasula deltoidea',
-		standardSize: '30-40mm',
-		recordSize: '52mm',
-		images: [
-			{
-				link: 'deltoid-rock-shell-vasula-deltoidea',
-				notes: `
-				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
-				Largest specimen is 35mm.
-				`,
-			},
-		],
-	}),
-	new Shell({
-		class: ShellClass.UNIVALVE,
-		order: 'Neogastropoda',
 		family: 'Fasciolariidae',
 		commonName: 'Chestnut Latirus',
 		scientificName: 'Leucozonia nassa',
