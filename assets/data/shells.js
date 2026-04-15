@@ -98,7 +98,8 @@ const ShellList = [
 					I have 4 specimens that are near or over 64mm, but be aware: these are likely gerontic specimens.
 					They came up in 2024 a week after hurricane Milton on Hutchinson Island (Chastain Beach).
 					The smallest white and yellow specimens are from the middle keys.
-					The mid-sized ones are from the Naples and Palm Coast areas.
+					Some mid-sized ones are from the Naples and Palm Coast.
+					The rest are from Hutchinson Island.
 				`,
 			},
 		],
@@ -800,7 +801,9 @@ const ShellList = [
 			{
 				link: 'cherry-jewel-box-chama-sarda',
 				notes: `
-				Found in the middle keys.  Likely a bottom valve.
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				Likely a bottom valve.
 				`,
 			},
 		],
@@ -850,8 +853,10 @@ const ShellList = [
 			{
 				link: 'spiny-fileclam-lima-caribaea',
 				notes: `
-				Found at different times in different places in Florida.
 				Pink discoloration on the largest specimen is sponge.
+				The largest is was pulled from in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
+				The others were found in the middle keys.
 				`,
 			},
 		],
@@ -993,7 +998,8 @@ const ShellList = [
 			{
 				link: 'hays-rocksnail-stramonita-canaliculata',
 				notes: `
-				I do not remember where I found these.
+				The biggest one and the two in the bottom right are from the Palm Coast area.
+				Potentially Phil Foster Park off teh boat ramp.
 				Likely at least some are from the rock jetty at Amelia Island (Fort Clinch).
 				`,
 			},
@@ -1049,7 +1055,8 @@ const ShellList = [
 			{
 				link: 'rustic-rocksnail-stramonita-rustica',
 				notes: `
-				Found on West Palm Beach (Phipps Ocean Park).
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				on West Palm Beach (Phipps Ocean Park).
 				`,
 			},
 		],
@@ -1073,6 +1080,7 @@ const ShellList = [
 				link: 'tinted-cantharus-gemophos-tinctus',
 				notes: `
 				Found all  over the place.
+				A large chunk were found on Hutchinson Island.
 				Largest is 32mm.
 				I have a mix of adults and juveniles turned to show their lips as examples.
 				`,
@@ -1142,36 +1150,100 @@ const ShellList = [
 			},
 		],
 	}),
-	// new Shell({
-	// 	class: ShellClass.UNIVALVE,
-	// 	order: '',
-	// 	family: '',
-	// 	commonName: '',
-	// 	scientificName: '',
-	// 	standardSize: '',
-	// 	images: [
-	// 		{
-	// 			link: '',
-	// 			notes: `
-	// 			`,
-	// 		},
-	// 	],
-	// }),
-	// new Shell({
-	// 	class: ShellClass.UNIVALVE,
-	// 	order: '',
-	// 	family: '',
-	// 	commonName: '',
-	// 	scientificName: '',
-	// 	standardSize: '',
-	// 	images: [
-	// 		{
-	// 			link: '',
-	// 			notes: `
-	// 			`,
-	// 		},
-	// 	],
-	// }),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Busyconidae',
+		commonName: 'Pear Whelk',
+		scientificName: 'Fulguropsis pyruloides',
+		standardSize: '75-100mm',
+		recordSize: '155mm',
+		idNotes: `
+		I want to be very clear what I am doing here:
+		I know there are other propseed species of pear whelks in floida based solely on morphological data.
+		However, until the DNA evidence comes in, I'm hedging my bets that the florida pear whelk species
+		are just populations and varients of the exact same species.
+		This family of mollusks is too phenotypically plastic to trust morphology unless DNA backs it up.
+		`,
+		images: [
+			{
+				link: 'pear-whelk-fulguropsis-pyruloides',
+				notes: `
+				Found all over the place, from the naples area to the middle keys to to Amelia Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Naticidae',
+		commonName: 'Sharkeye',
+		scientificName: 'Neverita duplicata and delessertiana',
+		standardSize: '25-90mmm',
+		recordSize: '98mm',
+		idNotes: `
+		The two shell species, without the animal, can only be consistently
+		identified by the umbilicus (the hole under the shell).
+		Neverita duplicata (the Atlantic species) has a smoother umbilicus that is flatter against the callus.
+		Neverita delessertiana (the Gulf species) has a deeper umbilicus with a trench swinging away from the callus.
+		However, the larger these species get,
+		the harder it is to tell one from the other.
+		The umbilicus' trench gets larger by necessity as the shell grows, ambiguating the id.
+		furthermore, the callus can cover the trench entirely in the smaller specimens.
+		Worse yet, the two species do have an overlapping range in South Florida.
+		Other traits, such as delessertiana tending to be greyer and more puffed,
+		is affected by the local environment, so they are not primarily identifiers.
+		I'm kept the sizes general across the two species.
+		Duplicata trends larger (up too 98mm) versus delessertiana (68mm),
+		but that is due to habitat.
+		In areas where they overlap I'm not sure they will be difefrently sized.
+		`,
+		images: [
+			{
+				link: 'shark-eye-neverita-duplicata-and-delessertiana',
+				notes: `
+				My specimens are from all over the place.
+				The small ones with dark callous and interiors on the right
+				are all from Little Talbot island.
+				They are most likely Neverita duplicata.
+				The small tan ones in the middle I'm not sure where they came from
+				but they may be from Amelia island.
+				That wouuld suggest Neverita duplicata, and they are flatter like that species,
+				but they have more trench than my little Talbot finds.
+				The midsized group to the left mostly from the Napels area.
+				Those appear to be Neverita delessertiana.
+				The five-shell arc of the largest specimen 
+				to the second to last be specimen are from Hutchinson island.
+				The final large one (with the dark interios) is from Amelia Island.
+				These large specimens have the trenching expected of delessertiana,
+				but Hutchinson island can have either species.
+				One would not expect delessertiana on Amelia Island
+				as that is too far north.
+				The largest specimen is 76mm despite missing a hunk of its lip.
+				`,
+			},
+			{
+				link: 'shark-eye-highlight',
+				notes: `
+				Unfortunately, I do not remember where I found this one.
+				I remember almost throwing it back, thinking it was tar stained
+				like shells in Texas, then stopping, realizing something was off about it,
+				and pocketing it.
+				I believe this animal had a pigmentation mutation.
+				In its early life, it was nearly black.
+				Note the sharp line when it reverted to something closer to its expected colors for a while.
+				Then it started to have issues where the black came back again.
+				That inky staining is glossy and ultimatly starts and stops along growth lines.
+				In contrast, its callus is honey tan.
+				Its interior is also honey tan and while.
+				All of that together suggests the mantel was
+				not consistently correctly modulating pigment placement.
+				I am less sure what to make of the unusual interior color.
+				`,
+			},
+		],
+	}),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
