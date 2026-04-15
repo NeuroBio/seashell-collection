@@ -420,7 +420,7 @@ const ShellList = [
 			{
 				link: 'white-atlantic-semele-semele-proficua',
 				notes: `
-					Found across florida.  Most heavily harvested from Fort Myers (Estero Island)
+					Found across Florida.  Most heavily harvested from Fort Myers (Estero Island)
 					and Marco Island (Tiger Tail). 
 				`,
 			},
@@ -999,8 +999,8 @@ const ShellList = [
 				link: 'hays-rocksnail-stramonita-canaliculata',
 				notes: `
 				The biggest one and the two in the bottom right are from the Palm Coast area.
-				Potentially Phil Foster Park off teh boat ramp.
-				Likely at least some are from the rock jetty at Amelia Island (Fort Clinch).
+				Potentially Phil Foster Park off the boat ramp.
+				Likely, at least some are from the rock jetty at Amelia Island (Fort Clinch).
 				`,
 			},
 		],
@@ -1070,7 +1070,7 @@ const ShellList = [
 		idNotes: `
 		The thick lip is the most obvious identifying trait.
 		However, juvenile specimens may not have developed it yet and are more prone to lip breakage.
-		The bexk way to tell juveniles from rocksnails is the beaded ridges that will alway be found on
+		The best way to tell juveniles from rocksnails is the beaded ridges that will alway be found on
 		this species and never on rocksnails.
 		`,
 		standardSize: '25-28mm',
@@ -1161,7 +1161,7 @@ const ShellList = [
 		idNotes: `
 		I want to be very clear what I am doing here:
 		I know there are other propseed species of pear whelks in floida based solely on morphological data.
-		However, until the DNA evidence comes in, I'm hedging my bets that the florida pear whelk species
+		However, until the DNA evidence comes in, I'm hedging my bets that the Florida pear whelk species
 		are just populations and varients of the exact same species.
 		This family of mollusks is too phenotypically plastic to trust morphology unless DNA backs it up.
 		`,
