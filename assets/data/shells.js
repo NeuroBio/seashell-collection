@@ -129,7 +129,7 @@ const ShellList = [
 		images: [
 			{
 				link: 'florida-pickly-cockle-trachycardium-egmontianum',
-				notes: `My standard sized ones.  Found on Fort Myers (Estero Island), Marco Island (Tiger Tail Beach), Atsena Otie, ect.`,
+				notes: `My standard sized ones.  Found on Estero Island, Marco Island (Tiger Tail Beach), Atsena Otie, ect.`,
 			},
 			{
 				link: 'florida-pickly-cockle-trachycardium-egmontianum-the-big-ones',
@@ -158,7 +158,7 @@ const ShellList = [
 			{
 				link: 'yellow-prickly-cockle-dallocardia-muricata',
 				notes: `
-				Found on Fort Myers (Estero Island), Lover's Key, Marco Island (Tiger Tail Beach), Keewaydin, Sanibel (Blind Pass Beach), ect.
+				Found on Estero Island, Lover's Key, Marco Island (Tiger Tail Beach), Keewaydin, Sanibel (Blind Pass Beach), ect.
 				`,
 			},
 		],
@@ -297,7 +297,7 @@ const ShellList = [
 		The V is often tighter than those on quadrisulcata,
 		because the left and right sides of the bands meet perfectly.
 		Its shell is the thinnest of the three.
-		True to its name this is a northern species, so you are unliickly to find it on Florida below Amelia Island.
+		True to its name this is a northern species, so you are unlikely to find it on Florida below Amelia Island.
 		`,
 		images: [
 			{
@@ -420,7 +420,7 @@ const ShellList = [
 			{
 				link: 'white-atlantic-semele-semele-proficua',
 				notes: `
-					Found across Florida.  Most heavily harvested from Fort Myers (Estero Island)
+					Found across Florida.  Most heavily harvested from Estero Island
 					and Marco Island (Tiger Tail). 
 				`,
 			},
@@ -588,7 +588,7 @@ const ShellList = [
 			{
 				link: 'buttercup-lucine-anodontia-alba',
 				notes: `
-				Mostly found on Marco Island (Tiger Tail), Keewaydin, and Fort Myers (Estero Island).
+				Mostly found on Marco Island (Tiger Tail), Keewaydin, and Estero Island.
 				`,
 			},
 		],
@@ -655,8 +655,7 @@ const ShellList = [
 			{
 				link: 'rose-petal-tellin-eurytellina-lineata',
 				notes: `
-				Largely found on Marco Island (Tiger Tail)
-				and Fort Myers (Estero Island).
+				Largely found on Marco Island (Tiger Tail) and Estero Island.
 				`,
 			},
 		],
@@ -673,7 +672,7 @@ const ShellList = [
 			{
 				link: 'alternate-tellin-eurytellina-alternata',
 				notes: `
-				Many found on Cumberland Island, others on Fort Myers (Estero Island).
+				Many found on Cumberland Island, others on Estero Island.
 				`,
 			},
 		],
@@ -779,7 +778,7 @@ const ShellList = [
 			{
 				link: 'calico-clam-megapitaria-maculata',
 				notes: `
-				Largely found on Marco Island (Tiger Tail) and Fort Myers (Estero Island).
+				Largely found on Marco Island (Tiger Tail) and Estero Island.
 				`,
 			},
 		],
@@ -928,7 +927,7 @@ const ShellList = [
 			{
 				link: 'lace-murex-chicoreus-florifer',
 				notes: `
-				The majority of these were found on Fort Myers (Estero Island),
+				The majority of these were found on Estero Island,
 				Marco Island (Tiger Tail), and Kice Island.
 				The largest specimen is 76mm.
 				The smallest is 16mm.
@@ -948,7 +947,7 @@ const ShellList = [
 			{
 				link: 'apple-murex-phyllonotus-pomum',
 				notes: `
-				The majority of these were found on Fort Myers (Estero Island),
+				The majority of these were found on Estero Island,
 				Marco Island (Tiger Tail), and Kice Island.
 				The largest specimen is 64mm.
 				The smallest is 16mm.
@@ -1240,6 +1239,127 @@ const ShellList = [
 				All of that together suggests the mantel was
 				not consistently correctly modulating pigment placement.
 				I am less sure what to make of the unusual interior color.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Fasciolariidae',
+		commonName: 'Horse Conch',
+		scientificName: 'Triplofusus giganteus',
+		standardSize: '341-400mm',
+		recordSize: '606mm',
+		images: [
+			{
+				link: 'horse-conch-juveniles-triplofusus-giganteus',
+				notes: `
+				These are fprimarily from the Naples area,
+				and secondarily from the keys and Hutchinson's Island.
+				I don't believe any were from from Matanzas Inlet or further north.
+				`,
+			},
+			{
+				link: 'horse-conch-triplofusus-giganteus',
+				notes: `
+				All found in the Naples area.
+				Two on Estero Island (the near knobless one and the largest one).
+				The larger one with preisticum was on Sanibel (Periwinkle Beach).
+				The last three were from Dickman's Point.
+				Technically, there were four from Dickman's, but one was an albino,
+				so my dad took that one and traded me the largest one I have in exchange.
+				The largest one is 279mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Fasciolariidae',
+		commonName: 'True Tulip',
+		scientificName: 'Fasciolaria tulipa',
+		standardSize: '60mm-200mm',
+		recordSize: '275mm',
+		images: [
+			{
+				link: 'true-tulip-fasciolaria-tulipa',
+				notes: `
+				The largest one (165mm) was found on Estero Island.
+				Many of the dark ones were found in the keys
+				(including the second largest at Horseshoe Quarry).
+				The orangy ones were found on Sanibel and Estero Island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Fasciolariidae',
+		commonName: 'Banded Tulip',
+		scientificName: 'Cinctura lilium and hunteria',
+		standardSize: '57-105mm',
+		recordSize: '120mm',
+		idNotes: `
+		The best we have right now is this:
+		lilium is on the Atlantic coast and is generally "more narrow and elognated."
+		Its siphon can be longer but not always.
+		Hunteria is on the Gulf coast, and it generally more bulbous.
+		The species overlap in the keys.
+
+		`,
+		images: [
+			{
+				link: 'banded-tulip-cinctura-lilium-and-hunertia',
+				notes: `
+				The largest ones are 80mm.
+				Found everywhere.
+				The biggest proportion are from the Naples area and Little Talbot Island.
+				I believe the dark ones in the upper right were from Little Talbot.
+				They were found with the animal half dried out in them after a hurricane,
+				so they went straight to the garage for the insects to deal with them.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Ficidae',
+		commonName: 'Paper Fig',
+		scientificName: 'Ficus papyratia',
+		standardSize: '50-100mm',
+		recordSize: '115mm',
+		images: [
+			{
+				link: 'paper-fig-ficus-papyratia',
+				notes: `
+				Most of these were found on Marco Island (tiger tail) and Dickman's point.
+				A few more were found on Estero island.
+				The largest specimen is 80mm.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Cassidae',
+		commonName: 'Scotch Bonnet',
+		scientificName: 'Semicassis granulata',
+		standardSize: '40-75mm',
+		recordSize: '121mm',
+		images: [
+			{
+				link: 'scotch-bonnet-semicassis-granulata',
+				notes: `
+				The best small ones (three on the right) were found in piles of shells tumbled out of dredged
+				sand for a beach replenishment on West Palm Beach (Phipps Ocean Park).
+				The other whole ones and the most complete large one came from Hutchinson island.
+				The fragments were largely from Amelia Island I think.
+				The one in the top left absolutely was.
 				`,
 			},
 		],

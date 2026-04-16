@@ -63,6 +63,7 @@ header {
 	flex-grow: 1;
 	border-radius: 2em;
 	background-color: transparent;
+	user-select: none;
 	border: 0;
 	color: whitesmoke;
 	font-size: 12pt;
