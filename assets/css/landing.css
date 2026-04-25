@@ -7,9 +7,11 @@ header {
 #main-controls {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin-bottom: 1.5em;
 	column-gap: 5px;
-
+	row-gap: 5px;
+	flex-wrap: wrap;
 }
 
 /* sort */
@@ -60,7 +62,6 @@ header {
 
 #open-all {
 	cursor: pointer;
-	flex-grow: 1;
 	border-radius: 2em;
 	background-color: transparent;
 	user-select: none;
@@ -216,6 +217,10 @@ h4 i {
 hr {
 	color: rgb(81, 81, 104);
 	border: 1px solid rgb(81, 81, 104);
+}
+
+.major-divider {
+	margin-top: 15px;
 }
 
 /* from AI */

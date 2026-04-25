@@ -812,7 +812,7 @@ const ShellList = [
 				link: 'cherry-jewel-box-chama-sarda',
 				notes: `
 				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
+				at Phipps Ocean Park.
 				Likely a bottom valve.
 				`,
 			},
@@ -865,7 +865,7 @@ const ShellList = [
 				notes: `
 				Pink discoloration on the largest specimen is sponge.
 				The largest is was pulled from in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
+				at Phipps Ocean Park.
 				The others were found in the middle keys.
 				`,
 			},
@@ -1066,7 +1066,7 @@ const ShellList = [
 				link: 'rustic-rocksnail-stramonita-rustica',
 				notes: `
 				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
+				at Phipps Ocean Park.
 				`,
 			},
 		],
@@ -1110,7 +1110,7 @@ const ShellList = [
 				link: 'deltoid-rock-shell-vasula-deltoidea',
 				notes: `
 				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
+				at Phipps Ocean Park.
 				Largest specimen is 35mm.
 				`,
 			},
@@ -1129,7 +1129,7 @@ const ShellList = [
 				link: 'chestnut latirus-leucozonia-nassa',
 				notes: `
 				The orangey ones were found in piles of shells tumbled out of dredged sand for a beach replenishment 
-				on West Palm Beach (Phipps Ocean Park).
+				at Phipps Ocean Park.
 				The dark ones came from the middle keys and Hutchinson Island.
 				`,
 			},
@@ -1367,7 +1367,7 @@ const ShellList = [
 				link: 'scotch-bonnet-semicassis-granulata',
 				notes: `
 				The best small ones (three on the right) were found in piles of shells tumbled out of dredged
-				sand for a beach replenishment on West Palm Beach (Phipps Ocean Park).
+				sand for a beach replenishment at Phipps Ocean Park.
 				The other whole ones and the most complete large one came from Hutchinson island.
 				The fragments were largely from Amelia Island I think.
 				The one in the top left absolutely was.

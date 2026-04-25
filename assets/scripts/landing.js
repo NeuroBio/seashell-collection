@@ -17,6 +17,23 @@ const shellsById = ShellList.reduce((byId, shell) => {
 ShellList.forEach((shell) => createAccordion(shell));
 sortBy(SortType.COMMON);
 
+const travelogue = d3.select('#travelogue');
+Travels.forEach((travel) => {
+	console.log(travel);
+	const entry = travelogue.append('li');
+	entry.append('h3').text(`${travel.date} - ${travel.title}`);
+	entry.append('p').text(travel.details);
+	const subentries = entry.append('ul');
+	travel.subentries.forEach((travelSubentry) => {
+		const subentry = subentries.append('li');
+		const title = travelSubentry.date
+			? `${travelSubentry.title} (${travelSubentry.date})`
+			:  travelSubentry.title;
+		subentry.append('h4').text(title);
+		subentry.append('p').text(travelSubentry.details);
+	});
+});
+
 // Construction Behavior
 function createAccordion (shell) {
 	const listing = shell.class === ShellClass.BIVALVE ? bivalveListing : univalveListing;
@@ -65,7 +82,7 @@ function createAccordion (shell) {
 			addTextSection(info, 'Specimen Notes', text);
 		}
 
-		const lastHr = d3.selectAll('hr').nodes();
+		const lastHr = d3.selectAll('.shell-section').nodes();
 		d3.select(lastHr[lastHr.length - 1])?.remove();
 	});
 
@@ -81,7 +98,7 @@ function createAccordion (shell) {
 		container.append('span')
 			.text(text);
 
-		info.append('hr');
+		info.append('hr').attr('class', 'shell-section');
 	}
 }
 
