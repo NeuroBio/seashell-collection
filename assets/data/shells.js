@@ -245,7 +245,7 @@ const ShellList = [
 		and the thickest, least-crowded bands in their crosshatch.
 		The V is often wider than those on strigilla,
 		because the left and right sides of the bands do not meet perfectly.
-		It is more robust than strigella and its valves are deeper.
+		It is more robust than strigilla and its valves are deeper.
 		`,
 		standardSize: '15-20mm',
 		recordSize: '29mm',
@@ -256,6 +256,8 @@ const ShellList = [
 				Specimens with yellow staining were found on Amelia Island.
 				The clean small-to-mid sized specimens found across Florida.
 				The largest specimens were found across several back-to-back days at Lover's Key.
+				An additional 7 specimens (not pictured) were found at Coral Cove
+				and Nathaniel P. Reed Hobe Sound National Wildlife Refuge. 
 				`,
 			},
 		],
@@ -320,15 +322,23 @@ const ShellList = [
 			{
 				link: 'lady-in-waiting-venus-chionopsis-intapurpurea',
 				notes: `
-				Found primarily at Coral Cove Park (3-5),
-				Hutchinson Island (5-7)
-				and Sanibel (Blind Pass Beach) and Captiva (the majority).
-				The biggest one I have is right on 51mm.
-				It's another one I am guessing is gerontic because it's pure white
+				Found primarily at Coral Cove Park and Nathaniel P. Reed Hobe Sound National Wildlife Refuge (about half),
+				Hutchinson Island (3-5),
+				and Sanibel (Blind Pass Beach) and Captiva (about half).
+				The biggest one I have (bottom right corner) is 51mm.
+				I am guessing is gerontic because it's pure white
 				(other than the standard brown next to the umbo)
 				and the final bands are compressed significantly.
-				It was either found on Captiva or Hutchinson.
-				Given the other gerontic specimens I have, my money is on Hutchinson.
+				It was either on Hutchinson.
+				My next largest secimens are between 40 and 47mm
+				and are all from Coral Cove and Nathaniel P. Reed Hobe Sound National Wildlife Refuge.
+				I included the three with the most vibrant interiors flipped over
+				as well as one clean white to show that while when the purple is there,
+				it's unmistakeable, but not all specimens have it.
+				The Atlantic coast specimens tended to be
+				All of my largest ones were found on the Atlantic coast.
+				Though smaller, the Gulk coast specimens tended to be more vibranted colored
+				both exteriorly and interiorly.
 				`,
 			},
 		],
@@ -655,7 +665,8 @@ const ShellList = [
 			{
 				link: 'rose-petal-tellin-eurytellina-lineata',
 				notes: `
-				Largely found on Marco Island (Tiger Tail) and Estero Island.
+				The pink ones were largely found on Marco Island (Tiger Tail) and Estero Island.
+				The white ones were largely found at  Nathaniel P. Reed Hobe Sound National Wildlife Refuge.
 				`,
 			},
 		],

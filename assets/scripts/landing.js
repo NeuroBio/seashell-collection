@@ -50,7 +50,7 @@ function createAccordion (shell) {
 		const info = section.append('section').attr('class', 'specimen-text');
 		if (i === 0) {
 			if (shell.standardSize) {
-				addTextSection(info, 'Standard Size', shell.standardSize);
+				addTextSection(info, 'Expected Size', shell.standardSize);
 			}
 			if (shell.recordSize) {
 				addTextSection(info, 'Reported Max Size', shell.recordSize);
