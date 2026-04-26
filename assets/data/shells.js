@@ -114,7 +114,10 @@ const ShellList = [
 		images: [
 			{
 				link: 'mortons-egg-cockle-laevicardium-mortoni',
-				notes: `Found on Sanibel (Blind Pass Beach) and Captiva.`,
+				notes: `
+				The dark ones (left) were Found on Sanibel (Blind Pass Beach) and Captiva.
+				The lighter ones (right) were found at Phil Foster Park.
+				`,
 			},
 		],
 	}),
@@ -192,7 +195,8 @@ const ShellList = [
 			{
 				link: 'giant-false-donax-iphigenia-brasiliensis',
 				notes: `
-				Essentially all were found on Hutchinson Island (the northern end of Bathtub Beach).
+				The best purple ones were found on Hutchinson Island (the northern end of Bathtub Beach).
+				The rest were found at Phil Foster Park, John D. MacArthur Beach State Park, Coral Cove, and Peanut Island.
 				`,
 			},
 		],
@@ -615,7 +619,8 @@ const ShellList = [
 			{
 				link: 'tiger-lucine-codakia-orbicularis',
 				notes: `
-				Found in the middle keys.
+				Most found in the middle keys.
+				The hinged double (my most brilliant colored one) was found covered in algea in Jupiter Sound.
 				`,
 			},
 		],
@@ -648,7 +653,9 @@ const ShellList = [
 			{
 				link: 'pennsylvania-lucine-lucina-pensylvanica',
 				notes: `
-				I don't remember where I found these.
+				I don't remember where I found most of these.
+				The two with periasticum were found in Jupiter Sound.
+				One of the smaller white ones was found on Peanut Island.
 				`,
 			},
 		],
@@ -900,10 +907,11 @@ const ShellList = [
 			{
 				link: 'cancellate-semele- semele-bellastriata',
 				notes: `
-				I do not remember where I found this one.
+				The white specimens were found at Nathaniel P. Reed Hobe Sound National Wildlife Refuge.
+				I do not remember where I found the purple one.
 				I just remember it was when I was giving
-				my mom all the paper cockles I found and I
-				kept this one because it looked different.
+				my mom all the paper cockles  on the beach.
+				I kept this one because it looked different.
 				It may have been in the middle keys.
 				`,
 			},
@@ -921,7 +929,7 @@ const ShellList = [
 			{
 				link: 'pointed-venus-anomalocardia-cuneimeris',
 				notes: `
-				Found on Peanut Island.
+				Found on Peanut Island and at Phil Foster Park.
 				`,
 			},
 		],
