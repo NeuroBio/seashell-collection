@@ -95,7 +95,7 @@ const Travels = [
 	}),
 	new Vacation({
 		area: 'The Palm Beaches',
-		date: 'April 16-18th, 2025',
+		date: 'April 16-18th, 2026',
 		beaches: [
 			new Beach({
 				name: 'Coral Cove',

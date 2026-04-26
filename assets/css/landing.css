@@ -167,9 +167,6 @@ h4 i {
 	border: 0;
 }
 
-.accordion-body {
-}
-
 .specimen-entry {
 	display: flex;
 	max-width: calc(100vw - 20px);
@@ -235,4 +232,30 @@ hr {
     pointer-events: none;
     z-index: 100;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0 0 0 10px;
+}
+
+.travelogue-entry {
+
+
+	& h3 {
+		font-size: 14pt;
+		font-style: normal;
+		margin-bottom: 0;
+	}
+
+	& h4 {
+		font-size: 11pt;
+		margin-bottom: 0;
+	}
+
+	p {
+		margin: 0;
+		color: rgb(162, 164, 202);
+		max-width: 500px;
+	}
 }

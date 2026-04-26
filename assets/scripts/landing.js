@@ -18,21 +18,7 @@ ShellList.forEach((shell) => createAccordion(shell));
 sortBy(SortType.COMMON);
 
 const travelogue = d3.select('#travelogue');
-Travels.forEach((travel) => {
-	console.log(travel);
-	const entry = travelogue.append('li');
-	entry.append('h3').text(`${travel.date} - ${travel.title}`);
-	entry.append('p').text(travel.details);
-	const subentries = entry.append('ul');
-	travel.subentries.forEach((travelSubentry) => {
-		const subentry = subentries.append('li');
-		const title = travelSubentry.date
-			? `${travelSubentry.title} (${travelSubentry.date})`
-			:  travelSubentry.title;
-		subentry.append('h4').text(title);
-		subentry.append('p').text(travelSubentry.details);
-	});
-});
+Travels.forEach((travel) =>  addTravelogueEntry(travelogue, travel));
 
 // Construction Behavior
 function createAccordion (shell) {
@@ -100,6 +86,23 @@ function createAccordion (shell) {
 
 		info.append('hr').attr('class', 'shell-section');
 	}
+}
+
+function addTravelogueEntry (travelogue, travel) {
+	const entry = travelogue.append('li').attr('class', 'travelogue-entry');
+	entry.append('h3').text(`${travel.date} - ${travel.title}`);
+	entry.append('p').text(travel.details);
+	const subentries = entry.append('ul');
+	travel.subentries.forEach((travelSubentry) => addTravelogueSubentry(subentries, travelSubentry));
+}
+
+function addTravelogueSubentry (subentries, travelSubentry) {
+	const subentry = subentries.append('li');
+	const title = travelSubentry.date
+		? `${travelSubentry.title} (${travelSubentry.date})`
+		:  travelSubentry.title;
+	subentry.append('h4').text(title);
+	subentry.append('p').text(travelSubentry.details);
 }
 
 
