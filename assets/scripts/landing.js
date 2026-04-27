@@ -143,17 +143,18 @@ function sortBy (type) {
 			const container = d3.select(listNodes[i]);
 			const entries = container.selectAll('.shell-listing');
 			
-			let lastOrder;
+			let lastGrouping;
 			entries.each((shell, j, nodes) => {
-				if (shell.order !== lastOrder) {
+				const current = `${shell.order} - ${shell.family}`
+				if (current !== lastGrouping) {
 					const currentNode = nodes[j];
 					
 					d3.select(currentNode.parentNode)
 						.insert('h3', () => currentNode)
 						.attr('class', 'order-divider')
-						.text(shell.order);
+						.text(current);
 
-					lastOrder = shell.order;
+					lastGrouping = current;
 				}
 			});
 		});
