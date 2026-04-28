@@ -1383,6 +1383,91 @@ const ShellList = [
 			},
 		],
 	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Short Macoma',
+		scientificName: 'Psammotreta brevifrons',
+		standardSize: '15-20mm',
+		recordSize: '28mm for Florida, 40mm across entire range',
+		images: [
+			{
+				link: 'short-macoma-psammotreta-brevifrons',
+				notes: `
+				Largest specimen is 28mm.
+				All specimens found at Nathaniel P. Reed Hobe Sound National Wildlife Refuge. 
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.BIVALVE,
+		order: 'Cardiida',
+		family: 'Tellinidae',
+		commonName: 'Large Strigilla',
+		scientificName: 'Strigilla carnaria',
+		standardSize: '16-25mm',
+		recordSize: '28mm',
+		images: [
+			{
+				link: 'large-strigilla-strigilla-carnaria',
+				notes: `
+				Found on Hutchinson Island and Nathaniel P. Reed Hobe Sound National Wildlife Refuge.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Naticidae',
+		commonName: 'Brown Moon Snail',
+		scientificName: 'Polinices hepaticus',
+		standardSize: '25-50mm',
+		recordSize: '55mm',
+		images: [
+			{
+				link: 'brown-moon-snail-polinices-hepaticus',
+				notes: `
+				Found in piles of shells tumbled out of dredged sand for a beach replenishment 
+				at Phipps Ocean Park.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Naticidae',
+		commonName: 'Milk Moon Snail',
+		scientificName: 'Polinices lacteus',
+		standardSize: '8-30mm',
+		recordSize: '40mm',
+		images: [
+			{
+				link: 'milk-moon-snail-polinices-lacteus',
+				notes: `
+				Found in Jupiter Sound.
+				`,
+			},
+		],
+	}),
+	// new Shell({
+	// 	class: ShellClass.UNIVALVE,
+	// 	order: '',
+	// 	family: '',
+	// 	commonName: '',
+	// 	scientificName: '',
+	// 	standardSize: '',
+	// 	images: [
+	// 		{
+	// 			link: '',
+	// 			notes: `
+	// 			`,
+	// 		},
+	// 	],
+	// }),
 	// new Shell({
 	// 	class: ShellClass.BIVALVE,
 	// 	order: '',
@@ -1398,8 +1483,4 @@ const ShellList = [
 	// 		},
 	// 	],
 	// }),
-
-	// but I have a hunch that I found them in the shell waste piles
-	// left for us during the beach replenishment in West Palm Beach 2021 (Phipps Ocean Park).
-
 ];
