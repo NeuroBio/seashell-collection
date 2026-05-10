@@ -742,7 +742,7 @@ const ShellList = [
 				link: 'sunrise-tellin-tellina-radiata',
 				notes: `
 				This shell chose me.
-				It rolled up at my feet on a wav while walking back from a long walk in the middle keys.
+				It rolled up at my feet on a wav while walking back from a long walk on sandspur beach (Bahia honda).
 				I had to chase it to get it into my hot little hands.
 				My dad, who was several steps ahead, informed me that the sea gods meant for him to have it.
 				I was a terrible child and did not give it to him.
@@ -1426,6 +1426,11 @@ const ShellList = [
 		scientificName: 'Polinices hepaticus',
 		standardSize: '25-50mm',
 		recordSize: '55mm',
+		idNotes: `
+		As an aside, I immediately knew these were not shark eyes, but my parents assured me they were.
+		If you are unsure look under the shell.  The appature and umbilicus are entirely diffrent from sharkeyes.
+		The appature is D shaped and there is no callus over the umbillucus.
+		`,
 		images: [
 			{
 				link: 'brown-moon-snail-polinices-hepaticus',
@@ -1449,6 +1454,190 @@ const ShellList = [
 				link: 'milk-moon-snail-polinices-lacteus',
 				notes: `
 				Found in Jupiter Sound.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Cycloneritida',
+		family: 'Neritidae',
+		commonName: 'Checkered Nerite',
+		scientificName: 'Nerita tessellata',
+		standardSize: '10-18mm',
+		recordSize: '25mm',
+		idNotes: `
+		The small size and structured white patterning are charcteristic of tessellata.
+		It will not have the obvious protruding teeth of peloronta or versicolor,
+		nor the thick sunken teeth of fulgurans,
+		which also grows larger and is primarily black, with its light markings more chaotically placed.
+		`,
+		images: [
+			{
+				link: 'checkered-nerite-nerita-tessellata',
+				notes: `
+				The small ones were found in Julpiter sound.
+				The bigger ones were found in the middle keys.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Cycloneritida',
+		family: 'Neritidae',
+		commonName: 'Antillean Nerite',
+		scientificName: 'Nerita fulgurans',
+		standardSize: '10-29mm',
+		recordSize: '37mm',
+		idNotes: `
+		It will not have the obvious protruding teeth of peloronta or versicolor,
+		Its thick sunken teeth are more prominant than the smaller tessellata.
+		Fulgurans also has a more black body with chaotic white patterning unlike the more structured patterning of tessellata.
+		`,
+		images: [
+			{
+				link: 'antillean-nerite-nerita-fulgurans',
+				notes: `
+				Found primarily in the middle keys.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Cycloneritida',
+		family: 'Neritidae',
+		commonName: 'Bleeding Tooth Nerite',
+		scientificName: 'Nerita peloronta',
+		standardSize: '20-40mm',
+		recordSize: '50mm',
+		idNotes: `
+			The easiest to id because the red and orange on its teeth.
+			All other species have white teeth.
+		`,
+		images: [
+			{
+				link: 'bleeding-tooth-nerita-peloronta',
+				notes: `
+				Some were found on the boat launches at Phil Foster park.
+				Most (including the largest) were found in the middle keys.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Cycloneritida',
+		family: 'Neritidae',
+		commonName: 'Four-Tooth Nerite',
+		scientificName: 'Nerita versicolor',
+		standardSize: '14-27mm',
+		recordSize: '33mm',
+		idNotes: `
+			Lacks the red and orange on its teeth of peloronta.
+			But stilll have priminant protuding teeth.  Typically four, but sometimes only 3 are identifiable.
+		`,
+		images: [
+			{
+				link: 'four-tooth-nerite-nerita-versicolor',
+				notes: `
+				Found in the middle keys.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Turbinellidae',
+		commonName: 'Carribean Vase Shell',
+		scientificName: 'Vasum muricatum',
+		standardSize: '50-100mm',
+		recordSize: '118mm (Florida), 145mm (wordlwide)',
+		images: [
+			{
+				link: 'vase-shell-vasum-muricatum',
+				notes: `
+				The small one is from the middle shells.
+				It was found on a nameless pull off on the atlantic side across from Horseshow quarry.
+				The large one was found on Dickman's Point.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Neogastropoda',
+		family: 'Busyconidae',
+		commonName: 'Channeled Whelk',
+		scientificName: 'Busycotypus canaliculatus',
+		standardSize: '127-170mm',
+		recordSize: '178mm (Florida), 230mm (Maryland)',
+		images: [
+			{
+				link: 'channeled-whelk-busycotypus-canaliculatus',
+				notes: `
+					Two white ones found on Cumberland island.
+					One white found at Little Talbot island.
+					The rest are from Amelia island.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Ovulidae',
+		commonName: 'Flamingo Tongue',
+		scientificName: 'Cyphoma gibbosum',
+		standardSize: '25-35mm',
+		recordSize: '45mm',
+		images: [
+			{
+				link: 'flamingo-tongue-cyphoma-gibbosum',
+				notes: `
+				Found in the middle keys.
+				The larger one at Curry Hammock State park.
+				The smaller one at Sandspur beach (Bahia Honda State Park).
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Architectonicoida',
+		family: 'Architectonicidae',
+		commonName: 'Common Sundial',
+		scientificName: 'Architectonica nobilis',
+		standardSize: '25-51mm',
+		recordSize: '65mm',
+		images: [
+			{
+				link: 'common-sundial-architectonica-nobilis',
+				notes: `
+				The largest one and teh white one were pulled from the
+				dredge piles from a beach reclaimation at Phipps Ocean Park.
+				Not sure about the other two.
+				`,
+			},
+		],
+	}),
+	new Shell({
+		class: ShellClass.UNIVALVE,
+		order: 'Littorinimorpha',
+		family: 'Personidae',
+		commonName: 'Atlantic Distorio',
+		scientificName: 'Distorsio clathrata',
+		standardSize: '35-50mm',
+		recordSize: '80mm',
+		images: [
+			{
+				link: 'atlantic-distortio-distorsio-clathrata',
+				notes: `
+				The complete one was found at Coral Cove.
+				The broken one is from Hutchinson Island (Chastain Beach).
+				Another sheller we talked to also found one at Coral Cove several years later.
 				`,
 			},
 		],
